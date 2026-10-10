@@ -448,6 +448,7 @@ footer {
   flex-wrap: wrap;
 }
 footer img { max-width: 160px; height: auto; opacity: .9; border-radius: 3px; }
+.visitor-map { width: 240px; max-width: 100%; }
 footer a { color: #fff; text-decoration-color: var(--spirit); }
 
 /* ---------- responsive ---------- */
