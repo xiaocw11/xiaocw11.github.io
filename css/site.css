@@ -182,16 +182,9 @@ h1 {
 .social img, .social svg { width: 24px; height: 24px; object-fit: contain; }
 
 /* left column under the photo: icons, citation stats, email */
-.profile .social {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  justify-items: center;
-  gap: 4px 0;
-  width: 240px;
-  margin: 12px 0 0;
-}
-.profile .social a { width: 38px; height: 38px; font-size: 24px; border-radius: 9px; }
-.profile .social img, .profile .social svg { width: 25px; height: 25px; }
+.profile .social { width: 240px; margin: 12px 0 0 -2px; gap: 2px; }
+.profile .social a { width: 28px; height: 28px; font-size: 19px; border-radius: 7px; }
+.profile .social img, .profile .social svg { width: 20px; height: 20px; }
 .scholar-stats {
   display: grid;
   grid-template-columns: 1fr 1fr;
