@@ -146,6 +146,8 @@ def render(data):
     s = put('id="cite-h"', str(data["hindex"]), s)
     s = put('id="cite-date"', data["updated"], s)
     s = put('data-cite="total-floor"', f'{data["total"] // 1000 * 1000:,}', s)
+    s = put('data-cite="total"', f'{data["total"]:,}', s)
+    s = put('data-cite="hindex"', str(data["hindex"]), s)
 
     count = 0
     a = s.find('<section id="publications">')

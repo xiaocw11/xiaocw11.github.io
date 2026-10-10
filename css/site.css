@@ -181,6 +181,34 @@ h1 {
 .social a:hover { background: var(--accent-wash); transform: translateY(-1px); }
 .social img, .social svg { width: 24px; height: 24px; object-fit: contain; }
 
+/* left column under the photo: icons, citation stats, email */
+.profile .social {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  gap: 4px 0;
+  width: 240px;
+  margin: 12px 0 0;
+}
+.profile .social a { width: 38px; height: 38px; font-size: 24px; border-radius: 9px; }
+.profile .social img, .profile .social svg { width: 25px; height: 25px; }
+.scholar-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 240px;
+  margin-top: 10px;
+  border: 1px solid var(--accent-line);
+  border-radius: 8px;
+  background: #fff;
+  text-decoration: none;
+  overflow: hidden;
+}
+.scholar-stats:hover { border-color: var(--spirit); }
+.scholar-stats .stat { display: flex; flex-direction: column; align-items: center; padding: 7px 4px 6px; }
+.scholar-stats .stat + .stat { border-left: 1px solid var(--accent-line); }
+.scholar-stats .stat-num { font-size: 19px; font-weight: 700; color: var(--heritage); line-height: 1.2; font-variant-numeric: tabular-nums; }
+.scholar-stats .stat-label { font-size: 11.5px; font-weight: 500; color: var(--muted); letter-spacing: .02em; }
+
 /* "Longer bio" click-to-expand */
 details.bio-more { margin: 0 0 4px; font-size: 14.5px; }
 details.bio-more > summary {
@@ -462,6 +490,7 @@ footer a { color: #fff; text-decoration-color: var(--spirit); }
   footer { padding: 20px 16px 32px; }
   .profile { grid-template-columns: 1fr; gap: 16px; }
   .profile .photo { width: 180px; height: 180px; }
+  .profile .social, .scholar-stats { width: 240px; }
   h1 { font-size: 30px; }
   h2 .right { margin-left: 0; }
   .pub-tools { position: static; }
