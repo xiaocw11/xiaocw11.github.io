@@ -1,462 +1,617 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Chaowei Xiao is an Assistant Professor at Johns Hopkins University and a researcher at NVIDIA Research working on LLM security, AI agent security, and AI safety: jailbreak attacks (AutoDAN), agent red-teaming (AgentPoison), prompt injection defense, and safety alignment.">
+  <meta name="author" content="Chaowei Xiao">
+  <meta name="google-site-verification" content="qEih9m0y-6X0QuisQYfHSxOvkW-o5Q3dfxuQ5Z4JtGA" />
+  <title>Chaowei Xiao · LLM &amp; AI Agent Security · Johns Hopkins University</title>
+  <link rel="canonical" href="https://xiaocw11.github.io/">
 
-  <head>
+  <!-- Link previews (Slack, X, LinkedIn, WeChat) -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Chaowei Xiao · LLM &amp; AI Agent Security">
+  <meta property="og:description" content="Assistant Professor at Johns Hopkins University and researcher at NVIDIA Research. LLM security, AI agent security, red-teaming, and safety alignment.">
+  <meta property="og:url" content="https://xiaocw11.github.io/">
+  <meta property="og:image" content="https://xiaocw11.github.io/img/profile.jpg">
+  <meta property="profile:first_name" content="Chaowei">
+  <meta property="profile:last_name" content="Xiao">
+  <meta name="twitter:card" content="summary">
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Johns Hopkins University">
-    <meta name="author" content="Chaowei Xiao">
-    <title>Chaowei Xiao, Johns Hopkins University</title>
+  <!-- Structured data: lets search engines and AI assistants identify who this page is about -->
+  <!-- When you fill in the social links in the profile section, add the same URLs to "sameAs" below. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "url": "https://xiaocw11.github.io/",
+    "mainEntity": {
+      "@type": "Person",
+      "@id": "https://xiaocw11.github.io/#person",
+      "name": "Chaowei Xiao",
+      "url": "https://xiaocw11.github.io/",
+      "image": "https://xiaocw11.github.io/img/profile.jpg",
+      "email": "mailto:chaoweixiao@jhu.edu",
+      "jobTitle": "Assistant Professor",
+      "description": "Researcher in AI Security, Agent security,LLM security, and AI safety",
+      "worksFor": [
+        { "@type": "CollegeOrUniversity", "name": "Johns Hopkins University", "url": "https://www.jhu.edu/" },
+        { "@type": "Organization", "name": "NVIDIA Research", "url": "https://www.nvidia.com/en-us/research/" }
+      ],
+      "alumniOf": [
+        { "@type": "CollegeOrUniversity", "name": "University of Michigan, Ann Arbor" },
+        { "@type": "CollegeOrUniversity", "name": "Tsinghua University" }
+      ],
+      "knowsAbout": [
+        "LLM security", "AI agent security", "LLM agents", "AI safety", "Jailbreak attacks",
+        "Prompt injection", "Red-teaming", "Safety alignment", "Trustworthy AI",
+        "Adversarial machine learning", "AI for science"
+      ],
+      "award": [
+        "MIT Technology Review Innovators Under 35 (TR35)",
+        "USENIX Security Distinguished Paper Award (2024)",
+        "Schmidt Sciences AI2050 Early Career Fellow (2024)",
+        "ACM Gordon Bell Special Prize for HPC-Based COVID-19 Research",
+        "ACM Gordon Bell Prize Finalist (2024)",
+        "MobiCom Best Paper Award (2014)",
+        "EWSN Best Paper Award (2021)",
+        "Impact Award, Argonne National Laboratory (2023)"
+      ],
+      "sameAs": [
+        "https://scholar.google.com/citations?user=Juoqtj8AAAAJ",
+        "https://twitter.com/ChaoweiX",
+        "https://www.linkedin.com/in/chaowei-xiao-00a73213a",
+        "https://www.zhihu.com/people/xiao-chao-wei-56",
+        "https://www.rednote.com/user/profile/68da2762000000002101a314"
+      ]
+    }
+  }
+  </script>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,700&display=swap" rel="stylesheet">
+  <!-- Icon fonts: Font Awesome (GitHub, Twitter, LinkedIn, ...) and Academicons (Google Scholar, ORCID, CV) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css">
+  <link href="css/site.css" rel="stylesheet">
+</head>
 
-    <!-- Custom styles for this template -->
-    <link href="css/small-business.css" rel="stylesheet">
-    <style type="text/css">
-      .content{margin-top: 0; margin-bottom: 0}
-    </style>
-    <meta http-equiv="Content-Type" content="text/html; charset=gbk"> 
-    <meta name="google-site-verification" content="qEih9m0y-6X0QuisQYfHSxOvkW-o5Q3dfxuQ5Z4JtGA" />
+<body>
 
-  </head>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="inner">
+      <a class="brand" href="#">Chaowei Xiao</a>
+      <nav class="site-nav">
+        <a class="active" href="#">Home</a>
+        <a href="#research">Research</a>
+        <a href="#news">News</a>
+        <a href="#talks">Talks</a>
+        <a href="#publications">Publications</a>
+        <a href="#group">Group</a>
+      </nav>
+    </div>
+  </header>
 
-  <body>
+  <div class="hero-wash">
+  <main>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Home</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="full.html">Publications</a>
-            </li>
-          
-          </ul>
+    <!-- Profile -->
+    <div class="profile">
+      <div>
+        <img class="photo" src="img/profile.jpg" alt="Chaowei Xiao, Johns Hopkins University" width="240" height="240">
+        <div class="meta">
+          Email: <span class="chip">chaoweixiao [at] jhu [dot] edu</span>
         </div>
       </div>
-    </nav>
 
-    <!-- Page Content -->
-    <div class="container">
+      <div>
+        <h1>Chaowei Xiao</h1>
+        <p class="position">
+          Assistant Professor · <a href="https://www.jhu.edu/">Johns Hopkins University</a><span class="sep">|</span>Researcher · <a href="https://www.nvidia.com/en-us/research/">NVIDIA Research</a>
+        </p>
 
-      <!-- Heading Row -->
-      <div class="row my-4">
-        <div class="col-lg-4">
-          <img class="img-fluid rounded img-responsive" style="width:80%" src="img/avatar_new.jpg" alt="">
+        <!-- Social links: paste each profile URL between the quotes in href="" (e.g. href="https://github.com/yourname").
+             Every icon is shown; one with an empty href goes nowhere, so fill it in (or delete that line) before publishing.
+             Please also add the same URLs to "sameAs" in the structured data near the top of this file. -->
+        <div class="social">
+          <a href="https://scholar.google.com/citations?user=Juoqtj8AAAAJ&amp;hl=en" title="Google Scholar" aria-label="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+          <a href="https://github.com/SaFo-Lab/" title="GitHub" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://twitter.com/ChaoweiX" title="Twitter / X" aria-label="Twitter / X"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/chaowei-xiao-00a73213a" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="" title="Hugging Face" aria-label="Hugging Face"><img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt=""></a>
+          <a href="https://www.rednote.com/user/profile/68da2762000000002101a314" title="小红书 (Xiaohongshu)" aria-label="小红书 (Xiaohongshu)"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="5" fill="#ff2442"/><text x="12" y="15.3" text-anchor="middle" font-size="7.4" font-weight="700" fill="#fff" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans SC, sans-serif">小红书</text></svg></a>
+          <a href="https://www.zhihu.com/people/xiao-chao-wei-56" title="知乎 (Zhihu)" aria-label="知乎 (Zhihu)"><i class="fab fa-zhihu"></i></a>
+          <a href="mailto:chaoweixiao@jhu.edu" title="Email" aria-label="Email"><i class="fas fa-envelope"></i></a>
         </div>
-        <!-- /.col-lg-8 -->
-        <div class="col-lg-8">
-          <h3>Chaowei Xiao </h3>
-          <!-- <p>PhD Candidate</p>
-          <p>Room 3944, Beyster Building</p>
-          <p>2260 Hayward Street, Ann Arbor, Mi 48109</p>
-           -->
-          <p></p>
-                    <p>Email: chaoweixiao@jhu.edu</p>
 
-          <p class=" m-0">I am Chaowei Xiao,  currently visiting Stanford University.  I am an assistant professor at JHU and a researcher at NVIDIA Research. 
-            
-            <!-- I obtained my PhD degree from the  University of Michigan, Ann Arbor under the supervision of Professor <a href="http://web.eecs.umich.edu/~mingyan/">Mingyan Liu</a> . I obtained my bachelor's degree in School of Software from Tsinghua University in 2015.  -->
-            <!-- advised by Professor <a href="http://www.cse.msu.edu/~liuyunha/">Yunhao Liu</a>, Professor <a href="http://www.thss.tsinghua.edu.cn/publish/soft/3641/2013/20130711150050931989171/20130711150050931989171_.html">Zheng Yang</a> and Dr. <a href="http://www4.comp.polyu.edu.hk/~csyanglei/#/pages/profile/about">Lei Yang</a>.  -->
-            <!-- I was also a visiting student at UC Berkeley in 2018, advised by Professor <a href="https://people.eecs.berkeley.edu/~dawnsong/">Dawn Song</a></p> -->
-          <p></p>
-          <p class="m-0">My research aims to build safe and secure AI and agents. Additionally, I have recently become interested in exploring principled methods for diverse application domains, including AI4Science, Embodied Agents, and Computer Use Agents.    </p>
-          <!-- <p class="m-0" style="color:red">I am on the job marketing.</p> -->
-          <br>
-          <!-- <p class="m-0"> <font color='red' >I will be joining Arizona State University  as  an assistant professor in the  School of Computing, Informatics, and Decision Systems Engineering in the Fall of 2021. </font> </p> -->
-
-          <!-- <p class="m-0"><a href="https://scholar.google.com/citations?user=Juoqtj8AAAAJ&hl=en">[Google Scholar] </a><a href="pdf/cv_chaoweixiao_new.pdf">[CV] </a></p> -->
-          <p class="m-0"> I obtained my Ph.D. from  the University of Michigan, Ann Arbor, and my bachelor's degree from Tsinghua University. Before joining JHU, I spent three wonderful years at University of Wisconsin-Madison and Arizona State University as an assistant professor. 
-             <!-- Professor <a href="http://www.thss.tsinghua.edu.cn/publish/soft/3641/2013/20130711150050931989171/20130711150050931989171_.html">Zheng Yang</a> and Dr. <a href="http://www4.comp.polyu.edu.hk/~csyanglei/#/pages/profile/about">Lei Yang</a>.  -->
-          </p>
-<!--           <p class="m-0">My group will move to Johns Hopkins University after two wonderful years at the University of Wisconsin, Madison and Arizona State University.  </p> -->
-<!-- <!--      -->
-          <p class="m-0"><a href="https://scholar.google.com/citations?user=Juoqtj8AAAAJ&hl=en">[Google Scholar] </a> </p>
-
-    <p> <font color='blue' > 
-            I’m looking for multiple postdoc who has experience in cybersecurity, software engineering, security, RL, or the robotics domain. 
-  
-          </font></p> 
-          <p> <font color='red' >
-          Our group plans to recruit multiple PhD students sponsored by Schmidt Sciences and Open Philanthropy. I am interested in students in general AI, cybersecurity, or robotics domains (interested in VLA/World Models). 
-   </font></p> 
-          </font></p> 
-          <br> 
-          <!-- <a class="btn btn-primary btn-lg" href="#">Call to Action!</a> -->
-
-
-<!-- Due to the large amount of emails I receive, I may not be able to respond to each one individually. -->
-        </div>
-        <!-- /.col-md-4 -->
+        <p class="bio">
+          <strong>Bio</strong>: I am Chaowei Xiao, an assistant professor at Johns Hopkins University (JHU) and a researcher at NVIDIA Research, currently visiting Stanford University.
+          I obtained my Ph.D. from the University of Michigan, Ann Arbor, and my bachelor's degree from Tsinghua University.
+        </p>
+        <p class="bio">
+          My research aims to build <strong>safe AGI</strong>, with a focus on <strong>AI and agent security</strong>. I have also recently become interested in <strong>Recursive Self Improvement, Continual Learning, Scientific Discovery</strong> and principled methods for diverse application domains, including AI4Science, embodied agents, and computer-use agents.
+        </p>
+        <details class="bio-more">
+          <summary>Longer bio</summary>
+          <p class="short-bio">Chaowei Xiao is an Assistant Professor at Johns Hopkins University and a researcher at NVIDIA Research. His research aims to build safe and secure AI, with a focus on <strong>LLM security and AI agent security</strong>. 
+          <p class="short-bio">He has received several prestigious awards, including the Schmidt Sciences AI2050 Early Career Fellowship, MIT Technology Review Innovators Under 35 (TR35), the Impact Award from Argonne National Laboratory, and various industry faculty awards. His work has been recognized with several paper awards at top-tier conferences, including the USENIX Security Distinguished Paper Award (2024), the EWSN Best Paper Award (2021), the MobiCom Best Paper Award (2014), ACM Gordon Bell Prize Finalist (2024), and the ACM Gordon Bell Special Prize for HPC-Based COVID-19 Research (2023). His research has been cited more than <span data-cite="total-floor">30,000</span> times and has been featured in media outlets such as <em>Nature</em>, <em>Wired</em>, <em>Fortune</em>, and <em>The New York Times</em>. One of his research outputs is on display at the Science Museum in London.</p>
+        </details>
       </div>
-      <!-- /.row -->
-       <div class=" my-4 text-left">
-      <h4>Award</h4>
-      <ul>
-        
-         <li> <a href="https://www.mlsafety.org/safebench/winners" > <font color='red' >[2025] JailbreakV won Second Prize of SafeBench Competition </font></a> </li>
-        <li> <a href="https://www.usenix.org/conference/usenixsecurity24/presentation/yu-zhiyuan" > <font color='red' >[2024] USENIX Security Distinguished Paper Award.</font></a> </li>
-         <li>  <a href="https://ai2050.schmidtsciences.org/fellows/"><font color='red' > [2024] Schmidt Sciences  AI2050 Early Career Fellow </font></a></li>
-         <li> <a href="https://sc24.supercomputing.org/2024/10/presenting-the-finalists-for-the-2024-gordon-bell-prize/"> [2024] ACM Gordon Bell Final list</a> </li>
-         <li> <a href="https://blogs.nvidia.com/blog/graduate-fellowship-recipients-2025-2026/"> [2024] My PhD student Xiaogeng Won NVIDIA Fellowship on Security track </a> </li>
-         <li> <a href="https://top2percentscientists.com/stanford-elsevier-top-scientists-list-2024/"> [2024] Selected in Stanford/Elsevier Top 2% Scientists List 2024</a> </li>
-         <li>  [2023] ACM Gordon Bell Special Prize for HPC-Based COVID-19 Research</li>
-         <li>  [2023] Impact Award from Argonne National Laboratory. </li>
-         <li> [2021] International Conference on Embedded Wireless Systems and Networks(EWSN) Best Paper Award </li>
-         <li> [2014] MobiCom Best Paper Award</li>        
-      </ul>
-       </div>
-      <div class=" my-4 text-left">
-      <h4>Recent Invited talks</h4>
-      <ul>
-          <li> [12/2025] I will be at NeurIPS and lead a discussion session at Alignment workshop@SD on How to Secure AI Agents</li>
-        <li> [6/2025] Invited talk at  <a href="https://cvpr25-advml.github.io/"> The 5th Workshop of Adversarial Machine Learning on Computer Vision: Foundation Models + X at CVPR </a> </li>
-        <li> [5/2025] Invited talk at  <a href="https://sites.google.com/ucsd.edu/sagai25-ieee-sp/"> Secure Generative AI Agents Workshop </a> at IEEE Symposium on Security and Privacy</li>
-        <li> [4/2025] Invited talk at International Symposium on Trustworthy Foundation Models  </li>
-        <li> [12/2024] Invited talk at SFU@NeurIPS</li>
-        <li> [12/2024] Invited talk at LLM and Agent Safety Competition@NeurIPS.</li>
-        <li> [10/2024] Keynote at <a href="https://lamps-ccs.com/">CCS Workshop on Large AI Systems and Models with Privacy and Safety Analysis</a>.  </li>
-        <li> [10/2024] Invited talk at Trillion Parameter Consortium (TPC) on LLM safety and security</li>
-          <li> [10/2024] Invited talk at <a href="https://nyu-larx.github.io/nsf-llm4security/#Agenda">NSF Workshop on Large Language Models for Network Security  </a></li>
-    <li> [06/2024] Invited talk at CVPR Workshop of Adversarial Machine Learning on Computer Vision: Robustness of Foundation Models</li>
-        <li> [06/2024] Talk at NAACL tutorial on Combating Security and Privacy Issues in the Era of Large Language Models </li>
-        <li> [05/2024] Invited talk at ICLR Secure and Trustworthy Large Language Models </li>
-         <li> [12/2023] Invited Talk at NeurIPS TDW workshop </li>
-      </ul>
-       </div>
-    <div class=" my-4 text-left">
-      <h4>Recent News</h4>
-      <ul>
-        <li style="display:none "> <a href="cv_chaoweixiao_Feb.pdf">package</a> </li>
-        <li style="display:none "> <a href="package_ChaoweiXiao.pdf">package</a> </li>
-        <li> [3/2026] Senior Area Chair of ACL, EMNLP and NeurIPS.</li>
-        <li> [1/2025] We have 9 papers at ICLR and 3 papers at ACL on  Model Safety and Security. Congratulations  to all authors. </li>
-            <li> [12/2024] We got the Fall Research Competition Award at UW-Madison. Thank you UW-Madison and OVCR. </li>
-                     <li> [11/2024] Our group recently received funding and donations. Thank you Amazon and Apple. </li>
-                  <li>[11/2024] Our lab will have a winter break this Dec. Lab members will  enjoy some well-deserved vacation time, with their families and loved ones.  </li> 
-             <li> [09/2024] We have four papers at NeurIPS regular track.</li>
-             <li> [09/2024]Our study on  <a href="https://arxiv.org/abs/2402.01920"> safety of RLFH Alignment  </a> is accepted to S&P (Oakland) 2025 </li>
-             <li> [07/2024] <a href="https://eddyluo1232.github.io/JailBreakV28K/">MultiModal jailbreak benchmark </a> is accepted to COLM. It is from the interns in my group.  </li>
-
-     <li> [07/2024] 4/4 papers are accepted to ECCV on the topic of trustworthy VLM and driving. Two of them are from  interns in my group.  </li>
-        <li> [06/2024] Senior Area Chair for NeurIPS Benchmark track</li>
-        <li> [06/2024] I am currently serving as AC for the NeurIPS regular track </li>
-        <li> [05/2024] Our jailbreak paper is accepted to USENIX Security. Congratulations, Zhiyuan! </li>
-        <li> [03/2024] Five papers at NAACL on LLM security (4 main and 1 finding): two on the backdoor attack, one on backdoor defense, one on jailbreak attacks, and one on model fingerprint.  Stay tuned on these exciting fields </li>
-        <li> [03/2024] PreDa for personalized federated learning is accepted at CVPR 2024. </li>      
-        <li> [01/2024] Three papers at ICLR. </li>
-           <li> [01/2024] Two papers at TMLR </li>
-         <li> [12/2023] Invited Talk at NeurIPS TDW workshop </li>
-      
-        <li> [10/2023]Our paper MoleculeSTM has been accepted to Nature Machine Intelligence. MoleculeSTM aims to align the nature language and molecule representation into the same representation space.  </li> 
-                 <details>
-            <summary>More</summary>
-        <li> [10/2023] Three papers at EMNLP and one paper at NeurIPS. For our NeurIPS paper, we study a new threat of the instruction tuning of LLMs by injecting the Ads. This is the first work that views the LLMs as the generative model and aims  to attack the generative property of LLMs.  </li> 
-         <li> [10/2023] Our tutorial on Security and Privacy in the Era of Large Language Models is accepted to NAACL.  </li> 
-        <li> [05/2023] One paper at ACL.  Congratulations to zhuofeng and jiazhao. We propose an attention-based method to defend against NLP backdoor attacks </li>
-        <li> [04/2023] Two papers at ICML. Congratulations to Jiachen and Zhiyuan. We propose the first benchmark for code copyright of code generation models.</li>
-        <li> [02/2023] Two papers at CVPR. Congratulations to Yiming and Xiaogeng. Xiaogeng is an intern from my group at ASU. </li>
-        <li> [02/2023] I will give a tutorial at CVPR 2023 on the topic of trustworthiness in the era of Foundation Models. Stay tuned!</li>
-        <li> [01/2023] <a href="impact.pdf">Impact Award from Argonne National Laboratory.</a> </li>
-        <li> [01/2023] One paper got accepted to USENIX Security 2023. </li>
-        <li> [1/2023] Three papers are accepted to ICLR 2023 <a href="https://arxiv.org/abs/2211.00322">[a]: </a>We explain why and how to use diffusion model to improve adversarial robustness and design DensePure which leverages the pretrained diffusion model and classifier to provide the state-of-the-art certified robustness. <a href="https://arxiv.org/pdf/2208.11126.pdf">[b]:</a>This is our first attemp on  retrieval-based framework and AI for drug discovery. We will recently release more work in this research line. Stay tuned! </li>
-        <li> [12/2022] Our team won the ACM Gordon Bell Special Prize for COVID-19 Research.</li>
-        <li> [09/2022] One papers got accepted to USENIX Security 2023.</li>
-        <li> [09/2022] Two papers got accepted to  NeurIPS 2022.</li>
-        <li> [09/2022] Our paper <a href="https://arxiv.org/pdf/2208.00094.pdf">RobustTraj</a> has been accepted to CORL for oral presentations. We explore to train a robust Trajectory Prediction Model against adversarial attacks.</li>
- 
-        <li> [08/2022] I will be giving a talk in virtual seminar series on 
-          <a href="https://vsehwag.github.io/SPML_seminar/" > Challenges and Opportunities for Security & Privacy in Machine Learning.</a>
-        <li> [07/2022] One survey paper to discuss the challenge and opportunity of machine learning security got accepted to ACM Computing Survey 2022.  
-        <li> [07/2022] Two papers got accepted to ECCV 2022.  </li>
-        <li> [05/2022] Two papers got accepted to ICML 2022. Thanks for all of my collaborators. </li>
-        <li> [3/2022]  I will be giving a talk in AAAI 2022 1st International Workshop on Practical Deep Learning in the Wild.</li>
-        <li> [3/2022] I will be giving a talk in AAAI 2022 workshop on Adversarial Machine Learning and Beyond. </li>
-
-          <li> [2/2022] One paper is accepted to ICLR. </li>
-      </details>
-    </ul>
-      <!-- <p> [07/2019]: Our paper "AdvIT: Adversarial Frames Identifier Based on Temporal Consistency In Videos" is accepted to ICCV 2019. </p>  -->
-         <!-- <p>  [06/2019]: Our paper: <a href="https://arxiv.org/abs/1907.05418"> "Adversarial Objects Against LiDAR-Based Autonomous Driving Systems" </a> is reported by <a href="https://syncedreview.com/2019/07/18/researchers-fool-lidar-with-3d-printed-adversarial-objects/"> Syncedreview</a>, <a href="https://www.selfdrivingcars360.com/researchers-fool-lidar-with-3d-printed-adversarial-objects/">Selfdrivingcars360</a>, <a href="https://www.analyticsindiamag.com/lidar-adversarial-objects-research-vulnerabilities-drawbacks/amp/">Analytics</a> and is discussed at <a href="https://www.reddit.com/r/SelfDrivingCars/comments/cc7khu/adversarial_objects_against_lidarbased_autonomous/">Reddit [1]</a>, <a href="https://www.reddit.com/r/MachineLearning/comments/ccc7p4/r_we_also_3dprint_our_adversarial_objects_and/">[2]</a>.</p> -->
-      <!-- <p> [05/2019]: One paper is accepted to CCS 2019. </p>  -->
-      <!-- <p> [05/2019]: One paper is accepted to USENIX Security 2019.  </p>  -->
-
-<!--       <p> [03/2019]: I will serve as a Program Committee member of <a href="https://icml2019workshop.github.io/">Security and Privacy of Machine Learning workshop </a> at ICML 2019.</p>  
- -->
-      </div>
-
-  
-<!--     <div class="my-4 text-left">    
-      <h4> Research Overview</h4>  
-      <img class="col-lg-8" src="framework.png" alt="research overview">
-    </div> -->
-      <!-- Call to Action Well -->
-<!--       <div class=" my-4 text-left">
-          <h4 id="about">About</h4>
-          <p class=" m-0">I amChaowei Xiao, a final year PhD student in CSE Department, University of Michigan, Ann Arbor. My advisor is Professor <a href="http://web.eecs.umich.edu/~mingyan/">Mingyan Liu</a> . I obtained my bachelor's degree in School of Software from Tsinghua University in 2015, advised by Professor <a href="http://www.cse.msu.edu/~liuyunha/">Yunhao Liu</a>, Professor <a href="http://www.thss.tsinghua.edu.cn/publish/soft/3641/2013/20130711150050931989171/20130711150050931989171_.html">Zheng Yang</a> and Dr. <a href="http://www4.comp.polyu.edu.hk/~csyanglei/#/pages/profile/about">Lei Yang</a>. I was also a visiting student at UC Berkeley in 2018, advised by Professor <a href="https://people.eecs.berkeley.edu/~dawnsong/">Dawn Song</a> and Professor <a href="http://boli.cs.illinois.edu/">Bo Li</a>. </p>
-          <p></p>
-          <p class="m-0">My research interest includes adversarial machine learning. </p>
-
-
-      </div> -->
-      <!-- <div class="my-4 text-left">
-        <h4>Current Students (Collaborators) </h4>
-        <ul>
-            <li><a href=""> Yulong Cao </a> (affiliated Ph.D. student from University of Michigan, Ann Arbor)</li>
-            <li><a href=""> Jiachen Sun</a> (affiliated Ph.D. student from University of Michigan, Ann Arbor)</li>
-            <li><a href=""> Haizhong Zheng </a> (affiliated Ph.D. student from University of Michigan, Ann Arbor)</li>
-            <li><a href=""> Jiazhao Li </a> (affiliated Ph.D. student from University of Michigan, Ann Arbor)</li>
-        </ul>
-      </div>
-      <div class="my-4 text-left">
-        <h4>Past Students</h4>
-        <ul>
-            <li><a href=""> Zichao Li</a> (now Ph.D. student from UCSC)</li>
-            <li><a href=""> Haonan Qiu</a> (now Ph.D. student from NTU)</li>
-        </ul>
-      </div> -->
-
-
-
-   <div class=" my-4 text-left">      
-<!-- <div class="card-body"> -->
-          <!-- <h4 id="pub"> Preprints </h4>
-       <ul>
-
-          <li><b> [New][Agent Security] A New Era in LLM Security: Exploring Security Concerns in Real-World LLM-based Systems. </b><p class='content'> Fangzhou Wu, Ning Zhang, Somesh Jha, Patrick McDaniel, Chaowei Xiao. </p><a href="https://arxiv.org/abs/2402.18649">https://arxiv.org/abs/2402.18649</a></li>
- 
-
-       </ul> -->
-         <h4 id="pub">Selected Publications (<a href="full.html">[Full List]</a>)  </h4>
-           <p>(* represents equal contribution) </p>
-           <p> <a href="https://scholar.google.com/citations?user=Juoqtj8AAAAJ&hl=en">[Google Scholar]</a></p>
-      <!-- <h5> 2023</h5> -->
-        <p><strong> Model/Agent Safety and Robustness Evaluation(Red-teaming) </strong></p>
-
-         <ul>
-           <li><b>AutoDAN-Turbo: A Lifelong Agent for Strategy Self-Exploration to Jailbreak LLMs
- </b> <p class='content'> Xiaogeng Liu*, Peiran Li*, G. Edward Suh, Yevgeniy Vorobeychik, Zhuoqing Mao, Somesh Jha, Patrick McDaniel, Huan Sun, Bo Li, Chaowei Xiao
-</p> <a href="">ICLR 2024</a> </li>
-            <li><b>AutoDAN: Generating Stealthy Jailbreak Prompts on Aligned Large Language Models.  </b> <p class='content'>  Xiaogeng Liu, Nan Xu, Muhao Chen, Chaowei Xiao.</p> <a href="https://arxiv.org/pdf/2310.04451.pdf">ICLR 2024.</a> </li>
-            
-            <li><b>DecodingTrust-Agent Platform (DTap): A Controllable and Interactive Red-Teaming Platform for AI Agents  </b> <p class='content'> Zhaorun Chen, Xun Liu, Haibo Tong, Chengquan Guo, Yuzhou Nie, Jiawei Zhang, Mintong Kang, Chejian Xu, Qichang Liu, Xiaogeng Liu, Tianneng Shi, Chaowei Xiao, Sanmi Koyejo, Percy Liang, Wenbo Guo, Dawn Song, Bo Li
-</p> <a href="https://arxiv.org/abs/2605.04808">.</a> </li>
-            
-            <li><b>A New Era in LLM Security: Exploring Security Concerns in Real-World LLM-based Systems.  </b> <p class='content'>  Fangzhou Wu, Ning Zhang, Somesh Jha, Patrick McDaniel, Chaowei Xiao</p> <a href="https://arxiv.org/abs/2402.18649">[pdf]</a> </li>
-<li><b>  Do Not Listen To Me: Understanding and Exploring Jailbreak Prompts of Large Language Models. </b> <p class='content'>   Zhiyuan Yu, Xiaogeng Liu, Shuning Liang, Zach Cameron,Chaowei Xiao, Ning Zhang. <p>USENIX Security 2024. <a href="https://www.usenix.org/system/files/sec24fall-prepub-1500-yu-zhiyuan.pdf">[pdf]</a> <a href=""></a></p></p></li>
-
-         </ul>
-
-
-
-       <p><strong> Safety Alignment/Mitigation</strong> </p>
-
-         <ul>
-<li> <b> Safety Mid-Training:
-Internalizing LLM Safety as a Foundational Capability
-</b> <p class='content'> 
-Zhengyue Zhao, Liwei Jiang,Yejin Choi, Chaowei Xiao<p> <a href="">[pdf]</a> <a href=""></a></p></p></li>
-
-
-<li> <b> ARMOR: Aligning Secure and Safe Large Language Models via Meticulous Reasoning
-</b> <p class='content'> 
-Zhengyue Zhao, Yingzi Ma, Somesh Jha, Marco Pavone, Patrick McDaniel, Chaowei Xiao.<p>ICLR 2026. <a href="https://openreview.net/pdf?id=Wx5xG7FPXK">[pdf]</a> <a href=""></a></p></p></li>
-
-<li><b>Mitigating Fine-tuning Jailbreak Attack with Backdoor Enhanced Alignment.  </b> <p class='content'> Jiongxiao Wang, Jiazhao Li, Yiquan Li, Xiangyu Qi, Muhao Chen, Junjie Hu, Yixuan Li, Bo Li, Chaowei Xiao
-</p> <a href="https://arxiv.org/abs/2402.14968">NeurIPS 2024</a> </li>
-
-         </ul>
-
-       <p> <strong>Agent Security via System-level Solutions</strong> </p>
-
-         <ul>
-  
-<li> <b> DRIFT: Dynamic Rule-Based Defense with Injection Isolation for Securing LLM Agents
-</b> <p class='content'> 
-Hao Li, Xiaogeng Liu, Hung-Chun Chiu, Dianqi Li, Ning Zhang, Chaowei Xiao.<p>NeurIPS 2025. <a href="https://arxiv.org/abs/2506.12104">[pdf]</a> <a href=""></a></p></p></li>
-  
-    
-<li> <b> AGrail: A Lifelong Agent Guardrail with Eﬀective and Adaptive Safety
-Detection. </b> <p class='content'>   Weidi Luo, Shenghong Dai, Xiaogeng Liu, Suman Banerjee, Huan Sun, Muhao Chen,
-Chaowei Xiao. <p>ACL 2025. <a href="https://arxiv.org/abs/2502.11448">[pdf]</a> <a href=""></a></p></p></li>
-
-<li> <b>PIGuard: Prompt Injection Guardrail via Mitigating Overdefense for Free.
-</b> <p class='content'>  Hao Li, Xiaogeng Liu, Ning Zhang, Chaowei Xiao. <p>ACL 2025. <a href="https://aclanthology.org/2025.acl-long.1468/">[pdf]</a> <a href=""></a></p></p></li>
-
-  
-<li> <b> System-Level Defense against Indirect Prompt Injection Attacks: An Information Flow Control Perspective
-</b> <p class='content'> 
-Fangzhou Wu, Ethan Cecchetti, Chaowei Xiao<p> <a href="https://arxiv.org/abs/2409.19091">[pdf]</a> <a href=""></a></p></p></li>
-  
-         </ul>
-
-
-<p> <strong>Ai4Science (Bio and Math)</strong> </p>
-
-         <ul>
-
-  <li> <b>   ProteinDT: A Text-guided Protein Design Framework
-</b> <p class='content'>  Shengchao Liu, Yanjing Li, Zhuoxinran Li, Anthony Gitter, Yutao Zhu, Jiarui Lu, Zhao Xu, Weili Nie, Arvind Ramanathan, Chaowei Xiao*, Jian Tang*, Hongyu Guo*, Anima Anandkumar*<p>Nature Machine Intelligence 2025 <a href="https://arxiv.org/abs/2302.04611">[pdf]</a> <a href=""></a></p></p></li>
-  <li><b> Multi-modal molecule structure–text model for text-based retrieval and editing    </b> <p class='content'>Shengchao Liu, Weili Nie, Chengpeng Wang, Jiarui Lu, Zhuoran Qiao, Ling Liu, Jian Tang*,  Chaowei Xiao*, Animashree Anandkumar*.  <p>Nature Machine Intelligence. <a href="https://arxiv.org/pdf/2212.10789.pdf">[pdf]</a> <a href=""></a></p></p></li>
-
-      
-  <li><b> ChatDrug: ChatGPT-powered Conversational Drug Editing Using Retrieval and Domain Feedback   </b> <p class='content'>Shengchao Liu, Jiongxiao Wang, Yijin Yang, Chengpeng Wang, Ling Liu, Hongyu Guo, Chaowei Xiao<p>ICLR 2024. <a href="https://openreview.net/pdf?id=HhqJtragcp">[pdf]</a> <a href=""></a></p></p></li>
-
-             <li><b>LeanAgent: Lifelong Learning for Formal Theorem Proving.  </b> <p class='content'> Adarsh Kumarappan, Mo Tiwari, Peiyang Song, Robert Joseph George, Chaowei Xiao, Anima Anandkumar. </p> <a href="">ICLR 2024</a> </li>
-
-         </ul>
-
-
-
-
-<p>  <strong>Foundation Models, Agents, Test-time Training</strong></p>
-
-         <ul>
-        <li><b> Test-Time Prompt Tuning for Zero-Shot Generalization in Vision-Language Models</b> <p class='content'>Manli Shu, Weili Nie, De-An Huang, Zhiding Yu, Tom Goldstein, Anima Anandkumar,  Chaowei Xiao  <p>NeurIPS 2022. <a href="https://arxiv.org/abs/2209.07511">[pdf]</a> <a href=""></a></p></p></li>
-
-         <li><b> Dolphins: Multimodal Language Model for Driving.  </b> <p class='content'>  Yingzi Ma, Yulong Cao, Jiachen Sun, Marco Pavone, Chaowei Xiao</p> <a href="https://arxiv.org/abs/2312.00438"> ECCV 2024</a> </li>     
-       <li><b> Voyager: An Open-Ended Embodied Agent with Large Language Models.  </b> <p class='content'>  Guanzhi Wang, Yuqi Xie, Yunfan Jiang, Ajay Mandlekar, Chaowei Xiao, Yuke Zhu, Linxi Fan, Anima Anandkumar
-</p> <a> TMLR 2024</a> </li>     
-<li><b>Prismer: A Vision-Language Model with Multi-Task Experts </b> <p class='content'>Shikun Liu, Linxi Fan, Edward Johns, Zhiding Yu, Chaowei Xiao, Anima Anandkumar. <p>TLMR 2024. <a href="https://openreview.net/pdf?id=R7H43YD6Lo">[pdf]</a> <a href=""></a></p></p></li>
-
-      <li><b> Shall We Pretrain Autoregressive Language Models with Retrieval? A Comprehensive Study         </b> <p class='content'> Boxin Wang, Wei Ping, Peng Xu, Lawrence McAfee, Zihan Liu, Mohammad Shoeybi, Yi Dong, Oleksii Kuchaiev, Bo Li, Chaowei Xiao, Anima Anandkumar, Bryan Catanzaro <p>EMNLP 2023. <a href="">[pdf]</a> <a href=""></a></p></p></li>
-          <li><b> Re-ViLM: Retrieval-Augmented Visual Language Model for Zero and Few-Shot Image Captioning        </b> <p class='content'> Zhuolin Yang, Wei Ping, Zihan Liu, Vijay Anand Korthikanti, Weili Nie, De-An Huang, Linxi Fan, Zhiding Yu, Shiyi Lan, Bo Li, Mohammad Shoeybi, Ming-Yu Liu, Yuke Zhu, Bryan Catanzaro, Chaowei Xiao*, Anima Anandkumar* <p>EMNLP   2023. <a href="">[pdf]</a> <a href=""></a></p></p></li>
- 
-         </ul>
-
-    
-  <p><strong>Trustworthy LLMs</strong></p>
-         <ul>
-           <li><b>[Watermark]Can Watermarks be Used to Detect LLM IP Infringement For Free?  </b> <p class='content'> Zhengyue Zhao, Xiaogeng Liu, Somesh Jha, Patrick McDaniel, Bo Li, Chaowei Xiao
-</p> <a href="">ICLR 2024</a> </li>
-
-   <li><b>[Hallucination]HaloScope: Harnessing Unlabeled LLM Generations for Hallucination Detection.  </b> <p class='content'> Xuefeng Du, Chaowei Xiao, Yixuan Li
-</p> <a href="https://arxiv.org/abs/2409.17504">NeurIPS 2024 (spotlight)</a> </li>
-           
-              
-<li><b>[Fingerprinting] Instructional Fingerprinting of Large Language Models.     </b> <p class='content'>Jiashu Xu, Fei Wang, Mingyu Derek Ma, Pang Wei Koh, Chaowei Xiao, Muhao Chen.<p>NAACL 2024. <a href="https://aclanthology.org/2024.naacl-long.180.pdf">[pdf]</a> <a href=""></a></p></p></li>
- <li> <b>[Memory Poisoning]AgentPoison: Red-teaming LLM Agents via Memory or Knowledge Base Backdoor Poisoning
-</b> <p class='content'> Zhaorun Chen, Zhen Xiang, Chaowei Xiao, Dawn Song, Bo Li. .<p>NeurIPS 2024. <a href="https://arxiv.org/pdf/2407.12784.pdf">[pdf]</a> <a href=""></a></p></p></li>
-
-<li><b>[Training-time threats] On the Exploitability of Instruction Tuning      </b> <p class='content'> Manli Shu, Jiongxiao Wang, Chen Zhu, Jonas Geiping, Chaowei Xiao*, Tom Goldstein* <p>NeurIPS   2023. <a href="">[pdf]</a> <a href=""></a></p></p></li>
-
-</ul>
-  <p><strong>Adversarial Machine Learning</strong></p>
-<ul>
-          <li><b>  [Defense] Diffusion Models for Adversarial Purification</b> <p class='content'>Weili Nie, Brandon Guo, Yujia Huang,Chaowei Xiao, Arash Vahdat, Anima Anandkumar. <p>ICML 2022<a href="https://arxiv.org/abs/2205.07460">[pdf]</a> <a href="https://github.com/NVlabs/DiffPure">[code]</a></p></p></li>         
-         <li><b>[Certification]  DensePure: Understanding Diffusion Models towards Adversarial Robustness. </b> <p class='content'>  Chaowei Xiao*, Zhongzhu Chen*, Kun Jin*, Jiongxiao Wang*, Weili Nie, Mingyan Liu, Anima Anandkumar, Bo Li, Dawn Song  <p>ICLR  2023. <a href="">[pdf]</a> <a href="">[code]</a></p></p></li>
-          
-           <li><b> [Physical Attacks] Invisible for both Camera and LiDAR: Security of Multi-Sensor Fusion based Perception in Autonomous Driving Under Physical-World Attacks.</b> <p class='content'>Yulong Cao*, Ningfei Wang*,Chaowei Xiao*, Dawei Yang*, Jin Fang, RuigangYang, Qi Alfred Chen, Mingyan Liu, Bo Li. <p>IEEE Symposium on Security and Privacy (Oakland) 2021</p></p></li>
-
-  <li><b>[Attacks] Spatially Transformed Adversarial Examples</b>
-    <p class="content">Chaowei Xiao*, <a href="http://people.eecs.berkeley.edu/~junyanz/">Jun-Yan Zhu*</a>, <a href="http://boli.cs.illinois.edu/">Bo Li</a>, Warren He, <a href="http://web.eecs.umich.edu/~mingyan/">Mingyan Liu</a> and <a href="https://people.eecs.berkeley.edu/~dawnsong/">Dawn Song</a></p><p class="">In International Conference on Learning Representations (ICLR), 2018 <a href="https://arxiv.org/abs/1801.02612">[pdf]</a>
-
-    </p>
-  </li>
-  <li><b>[Attacks] Generating Adversarial Examples with Adversarial Networks</b>
-    <p class="content">Chaowei Xiao, <a href="http://boli.cs.illinois.edu/">Bo Li</a>, <a href="http://people.eecs.berkeley.edu/~junyanz/">Jun-Yan Zhu</a>, Warren He, <a href="http://web.eecs.umich.edu/~mingyan/">Mingyan Liu</a> and <a href="https://people.eecs.berkeley.edu/~dawnsong/">Dawn Song</a></p><p>In International Joint Conference on Artificial Intelligence (IJCAI), 2018. <a href="https://arxiv.org/abs/1801.02610">[pdf]</a>
-
-  </p>
-  </li>
- 
- <li><b>[Physical Attacks] Robust Physical-World Attacks on Machine Learning Models</b>
-    <p class="content"> Kevin Eykholt*, <a href="https://ivanevtimov.eu/">Ivan Evtimov*</a>, <a>Earlence Fernandes</a>, <a href="http://boli.cs.illinois.edu/">Bo Li</a>, <a href="https://amir.rahmati.com/">Amir Rahmati</a>, Chaowei Xiao,  <a href="http://web.eecs.umich.edu/~aprakash/">Atul Prakash</a>,  <a href="https://homes.cs.washington.edu/~yoshi/">Tadayoshi Kohno</a> and <a href="https://people.eecs.berkeley.edu/~dawnsong/">Dawn Song</a></p><p>In IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2018 <a href="https://arxiv.org/abs/1707.08945">[pdf]</a>
-
-  </p>
-  </li>
-  <!-- <li><b>Patch Me If You Can: A Study on the effects of Individual User Behavior on the End-Host Vulnerability State</b>
-    <p class="content">Armin Sarabi, Ziyun Zhu, Chaowei Xiao, <a href="http://web.eecs.umich.edu/~mingyan/">Mingyan Liu</a> and <a href="http://legacydirs.umiacs.umd.edu/~tdumitra/">Tudor Dumitras</a></p>
-    <p>In Passive and Active Measurement conference (PAM), 2017 <a href="http://web.eecs.umich.edu/~mingyan/pub/PAM17_102-Sarabi.pdf">[pdf]</a>
-
-    </p>
-  </li> -->
-<!-- </ul>
-<h5>Before 2018</h5>
-<ul>
-  <li><b>Static Power of Mobile Devices: Self-updating Radio Maps for Wireless Indoor Localization</b>
-    <p class="content"><a href="http://cswu.me/">Chenshu Wu</a>, <a href="http://www.tsinghua.edu.cn/publish/soften/3131/2013/20130711152929220429684/20130711152929220429684_.html">Zheng Yang</a>, Chaowei Xiao, Chaofan Yang, <a href="http://www.cse.msu.edu/~liuyunha/">Yunhao Liu</a> and <a href="http://web.eecs.umich.edu/~mingyan/">Mingyan Liu</a>
-    <p>In IEEE International Conference on Computer Communications (INFOCOM), 2015
-    </p> 
-  </li>
-  <li><b>Tagoram: Real-time Tracking of Mobile RFID Tags to High Precision Using COTS Devices.</b>
-    <p class="content"><a href="http://www4.comp.polyu.edu.hk/~csyanglei/">Lei Yang</a>, Yekui Chen, <a href="http://www.cs.iit.edu/~xli/">Xiangyang Li</a>, Chaowei Xiao, <a href="https://www.ntu.edu.sg/home/limo/">Mo Li</a> and <a href="http://www.cse.msu.edu/~liuyunha/">Yunhao Liu</a> </p>
-    <p>In International Conference on Mobile Computing and Networking (MobiCom), 2014. <span style="color:#FF3333;"">Best Paper Award</span> -->
-
-    </p>
-  </li>
- <!--  <li><b>Automatic Radio Map Adaptation for Indoor Localization using Smartphones</b>
-        <p class="content"><a href="http://cswu.me/">Chenshu Wu</a>, <a href="http://www.tsinghua.edu.cn/publish/soften/3131/2013/20130711152929220429684/20130711152929220429684_.html">Zheng Yang</a> and Chaowei Xiao,</a>
-    <p>In IEEE Transactions on Mobile Computing (TMC) 2017
-    </p>
-  </li>
- -->
-
-</ul>
-
-
-          
-        <!-- </div> -->
-      </div>
-
-
-      <h4>Current PhD Students:</h4>  
-       <ul>
-            <li><a href="https://sheltonliu-n.github.io/"> Xiaogeng Liu (PhD@JHU, Transfer from UW-Madison)</a></li>
-         <li><a href="https://openreview.net/profile?id=~Zhengyue_Zhao1"> Zhengyue Zhao (PhD@JHU, Transfer from UW-Madison)</a> </li>
-       <li><a href="https://gray311.github.io/"> Yingzi Ma (PhD@UW-Madison)</a> </li>
-
-            <li><a href=""> Eddy Luo (co-advised with Zheng Xiang, PhD@UGA)</a> </li>
-         <li><a href="https://leolee99.github.io/"> Hao Li (Co-advised with Ning Zhang, PhD@WashU)</a> </li>
-
-        </ul>
-
-
-      
-   
-      <div class="my-4 text-left">
-      <a href="https://clustrmaps.com/site/1bjs5"  title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=ErVYLYZ4mvIxvI7ThZdn8MY2RLA5lI-S3KxFHg6T4FY&cl=ffffff" /></a>
-      </div>
-      <!--      <div class=" my-4 text-left">
-    <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=0e1633&w=a&t=n&d=ePEQ5JEuRFr0a3FK21KRraTp3IDeAVJ0Rp8hu2BevKc&co=0b4975&cmo=3acc3a&cmn=ff5353&ct=cdd4d9'></script>
-  </div> -->
-      <!-- Content Row -->
-      <!-- /.row -->
-
     </div>
 
-    <!-- /.container -->
+    <!-- Recruiting -->
+    <div class="callout">
+      <p><strong>Our group plans to recruit multiple PhD students</strong>. I am interested in students in general AI, cybersecurity, or robotics (VLA / world models).</p>
+      <p><strong>I'm also looking for multiple postdocs</strong> with experience in cybersecurity, software engineering, security, RL, or robotics.</p>
+    </div>
 
-    <!-- Footer -->
-    <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">Designed via Bootstrap</p>
+    <!-- Awards -->
+    <section id="awards">
+      <h2><span class="emoji">🏆</span> Awards (selected)</h2>
+      <ul class="plain">
+        <li>MIT Technology Review Innovators Under 35 (TR35 China) 2026</li>
+        <li><a href="https://www.mlsafety.org/safebench/winners">SafeBench Competition, Second Prize (JailbreakV)</a> <span class="year">· 2025</span></li>
+        <li><a href="https://www.usenix.org/conference/usenixsecurity24/presentation/yu-zhiyuan">USENIX Security Distinguished Paper Award</a> <span class="year">· 2024</span></li>
+        <li><a href="https://ai2050.schmidtsciences.org/fellows/">Schmidt Sciences AI2050 Early Career Fellow</a> <span class="year">· 2024</span></li>
+        <li><a href="https://sc24.supercomputing.org/2024/10/presenting-the-finalists-for-the-2024-gordon-bell-prize/">ACM Gordon Bell Prize Finalist</a> <span class="year">· 2024</span></li>
+        <li><a href="https://blogs.nvidia.com/blog/graduate-fellowship-recipients-2025-2026/">NVIDIA Graduate Fellowship (Security track)</a>, awarded to my PhD student Xiaogeng Liu <span class="year">· 2024</span></li>
+        <li><a href="https://top2percentscientists.com/stanford-elsevier-top-scientists-list-2024/">Stanford/Elsevier Top 2% Scientists List</a> <span class="year">· 2024</span></li>
+        <li>ACM Gordon Bell Special Prize for HPC-Based COVID-19 Research <span class="year">· 2023</span></li>
+        <li><a href="impact.pdf">Impact Award, Argonne National Laboratory</a> <span class="year">· 2023</span></li>
+        <li>EWSN Best Paper Award <span class="year">· 2021</span></li>
+        <li>MobiCom Best Paper Award <span class="year">· 2014</span></li>
+      </ul>
+    </section>
+
+    <!-- Research -->
+    <section id="research">
+      <h2><span class="emoji">🐾</span> Research <span class="right"><a href="full.html">all publications →</a></span></h2>
+      <!-- <p class="lead">I work on <strong>AI and AI agent security</strong>: understanding how models and agents fail, making safety part of what they are, and securing the systems they act in. We also build agents ourselves, and bring AI to science.</p> -->
+
+      <ul class="themes">
+        <li id="topic-redteam">
+          <p class="theme-head"><span class="theme-label">Evaluating AI &amp; Agent Safety.</span> <span class="theme-q">How and why do AI models and agents fail?</span></p>
+          <p class="tags-line"><span class="tags">Jailbreak · Agent attacks · Poisoning · Benchmarks</span></p>
+          <p class="theme-desc">To make AI safe, we first need to understand how it breaks. Our jailbreak attacks, agent attacks, and benchmarks are among the most widely cited tools for evaluating the safety and security of LLMs and agents.</p>
+          <ul class="subqs">
+            <li>
+              <p class="subq">How can we evaluate model safety automatically and at scale, even as models recursively self-improve?</p>
+              <p class="subq-papers"><span class="paper"><a class="pn" href="https://openreview.net/pdf?id=7Jwpw4qKkb">AutoDAN</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/2410.05295">AutoDAN-Turbo</a></span> <span class="paper"><a class="pn" href="https://www.usenix.org/system/files/sec24fall-prepub-1500-yu-zhiyuan.pdf">Jailbreak Prompts</a></span> <span class="paper"><a class="pn" href="https://aclanthology.org/2024.findings-naacl.224.pdf">Cognitive Overload</a></span></p>
+            </li>
+            <li>
+              <p class="subq">What threats do AI agents face, and how do we evaluate them?</p>
+              <p class="subq-papers"><span class="paper"><a class="pn" href="https://arxiv.org/pdf/2407.12784.pdf">AgentPoison</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/2409.11295">EIA</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/2407.20224">Editing Attack</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/2510.06607">CLI Harness</a></span> <span class="paper"><a class="pn" href="https://openreview.net/forum?id=LfdFnakqGJ">A2ASecBench</a></span></p>
+            </li>
+            <li>
+              <p class="subq">What new risks come with multimodal models, reasoning models, and new architectures such as diffusion language models?</p>
+              <p class="subq-papers"><span class="paper"><a class="pn" href="https://arxiv.org/pdf/2404.03027.pdf">JailbreakV-28K</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/2602.00154">ReasoningBomb</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/2606.04027">MaskForge</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/2504.19373">Doxing</a></span></p>
+            </li>
+            <li>
+              <p class="subq">How do we build benchmarks that comprehensively evaluate LLM and agent safety and security?</p>
+              <p class="subq-papers"><span class="paper"><a class="pn" href="https://raw.githubusercontent.com/mlresearch/v235/main/assets/huang24x/huang24x.pdf">TrustLLM</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/2106.04823">ML Safety Survey</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/2502.14296">TrustGen</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/2605.04808">DTap</a></span></p>
+            </li>
+            <li>
+              <p class="subq">What threats arise at training time?</p>
+              <p class="subq-papers"><span class="paper"><a class="pn" href="https://aclanthology.org/2024.naacl-long.171.pdf">Instruction Backdoors</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/2306.17194">AutoPoison</a></span> <span class="paper"><a class="pn" href="https://aclanthology.org/2024.naacl-long.165.pdf">BGMAttack</a></span> <span class="paper"><a class="pn" href="https://aclanthology.org/2024.acl-long.140.pdf">RLHFPoison</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/2402.01920">Preference Poisoning</a></span></p>
+            </li>
+          </ul>
+        </li>
+
+        <li id="topic-align">
+          <p class="theme-head"><span class="theme-label">Alignment &amp; Guardrails.</span> <span class="theme-q">How do we make AI and agent safety robust, not a thin layer?</span></p>
+          <p class="tags-line"><span class="tags">Safety alignment · Guardrails · Backdoor defense</span></p>
+          <p class="theme-desc">Today's safety training is often shallow: a few fine-tuning steps, a poisoned preference, or a clever prompt can undo it. We study how to make safety robust and internal, through alignment, guardrails, and backdoor defenses.</p>
+          <ul class="subqs">
+            <li>
+              <p class="subq">How can we make models safer through alignment?</p>
+              <p class="subq-papers"><span class="paper"><a class="pn" href="https://arxiv.org/abs/2507.11500">ARMOR</a></span> <span class="paper"><span class="pn">Safety Mid-Training</span></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/2505.18672">Concept Concentration</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/2601.07185">Surface Heuristics</a></span> <span class="paper"><a class="pn" href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/02990.pdf">AdaShield</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/pdf/2402.14968.pdf">BackdoorAlign</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/2202.04173">LM Detox</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/2410.08660">RePD</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/2411.03554">FIUBench</a></span></p>
+            </li>
+            <li>
+              <p class="subq">How do we detect and remove backdoors?</p>
+              <p class="subq-papers"><span class="paper"><a class="pn" href="https://arxiv.org/abs/2303.18191">TeCo</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/2311.09763">Defensive Demos</a></span> <span class="paper"><a class="pn" href="https://aclanthology.org/2024.naacl-long.27.pdf">DPoE</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/2305.02394">AttDef</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/2409.19993">Backdoor Survey</a></span></p>
+            </li>
+          </ul>
+        </li>
+
+        <li id="topic-agent">
+          <p class="theme-head"><span class="theme-label">Agent Security.</span> <span class="theme-q">Can we secure agents by design, even when the model can be fooled?</span></p>
+          <p class="tags-line"><span class="tags">System-level defense · Guardrails · Access control</span></p>
+          <p class="theme-desc">Agents read untrusted content and act with real privileges, so model-level alignment alone is not enough. We bring systems-security principles to agents, aiming for defenses that hold even when the model is manipulated, without making agents over-cautious.</p>
+          <ul class="subqs">
+            <li>
+              <p class="subq">Can system-level designs, such as information-flow control and dynamic security-policy enforcement, secure AI agents?</p>
+              <p class="subq-papers"><span class="paper"><a class="pn" href="https://arxiv.org/abs/2402.18649">LLM System Security</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/2409.19091">IFC Defense</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/2506.12104">DRIFT</a></span></p>
+            </li>
+            <li>
+              <p class="subq">Can guardrails adapt to new threats without over-blocking?</p>
+              <p class="subq-papers"><span class="paper"><a class="pn" href="https://arxiv.org/abs/2502.11448">AgentGuard</a></span> <span class="paper"><a class="pn" href="https://aclanthology.org/2025.acl-long.1468/">PromptInjectionGuard</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/2605.17329">Latent Reasoning Guardrail</a></span></p>
+            </li>
+            <li>
+              <p class="subq">Can we control what an agent knows and does from the inside?</p>
+              <p class="subq-papers"><span class="paper"><a class="pn" href="https://arxiv.org/abs/2606.22673">Agent MechSuits</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/2410.14676">SudoLM</a></span></p>
+            </li>
+          </ul>
+        </li>
+
+        <li id="topic-build">
+          <p class="theme-head"><span class="theme-label">Training Models &amp; Building Agents.</span> <span class="theme-q">How do we build AI models and agents that keep improving?</span></p>
+          <p class="tags-line"><span class="tags">Embodied agents · Test-time learning · Multimodal · Autonomous driving</span></p>
+          <p class="theme-desc">We also build the systems we want to secure, with a focus on agents and models that keep adapting after training rather than staying frozen.</p>
+          <ul class="subqs">
+            <li>
+              <p class="subq">How do we build lifelong-learning (self-evolving) agents and multi-agent systems?</p>
+              <p class="subq-papers"><span class="paper"><a class="pn" href="https://openreview.net/pdf?id=ehfRiF0R3a">Voyager</a></span> <span class="paper"><a class="pn" href="https://openreview.net/pdf?id=vOxaD3hhPt">MetaAgent</a></span></p>
+            </li>
+            <li>
+              <p class="subq">Can models adapt at test time and keep improving (continual learning)?</p>
+              <p class="subq-papers"><span class="paper"><a class="pn" href="https://arxiv.org/abs/2209.07511">TPT</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/2605.21606">Self-Distillation</a></span> <span class="paper"><a class="pn" href="https://openaccess.thecvf.com/content/CVPR2024/papers/Xie_PerAda_Parameter-Efficient_Federated_Learning_Personalization_with_Generalization_Guarantees_CVPR_2024_paper.pdf">PerAda</a></span></p>
+            </li>
+            <li>
+              <p class="subq">Can multimodal models perceive and act in the physical world?</p>
+              <p class="subq-papers"><span class="paper"><a class="pn" href="https://arxiv.org/abs/2302.12251">VoxFormer</a></span> <span class="paper"><a class="pn" href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/06203.pdf">Dolphins</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/2406.09411">MuirBench</a></span> <span class="paper"><a class="pn" href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/07903.pdf">RealGen</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/2501.00601">DreamDrive</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/2512.04459">dVLM-AD</a></span> <span class="paper"><a class="pn" href="https://openreview.net/pdf?id=U7iiF79kI3">CALICO</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/pdf/2309.00709.pdf">TrafficRLHF</a></span></p>
+            </li>
+            <li>
+              <p class="subq">Can foundation models be more efficient and versatile?</p>
+              <p class="subq-papers"><span class="paper"><a class="pn" href="https://arxiv.org/abs/2107.02192">Transformer-LS</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/2304.06762">RETRO Study</a></span> <span class="paper"><a class="pn" href="https://openreview.net/pdf?id=R7H43YD6Lo">Prismer</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/2302.04858">Re-ViLM</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/2402.14167">T-Stitch</a></span> <span class="paper"><a class="pn" href="https://openreview.net/forum?id=F5R0lG74Tu">DataGen</a></span> <span class="paper"><a class="pn" href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/03463.pdf">HMN</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/2204.11167">RelViT</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/2310.09720">HiCL</a></span></p>
+            </li>
+          </ul>
+        </li>
+
+        <li id="topic-science">
+          <p class="theme-head"><span class="theme-label">AI4Science.</span> <span class="theme-q">Molecule design, proteins, and AI4Math.</span></p>
+          <p class="theme-papers"><span class="paper"><a class="pn" href="https://arxiv.org/pdf/2212.10789.pdf">MoleculeSTM</a></span> <span class="paper"><a class="pn" href="https://openreview.net/pdf?id=HhqJtragcp">ChatDrug</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/2208.11126">RetMol</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/2302.04611">ProteinDT</a></span> <span class="paper"><a class="pn" href="https://ieeexplore.ieee.org/abstract/document/10793126">MProt-DPO</a></span> <span class="paper"><a class="pn" href="https://www.biorxiv.org/content/10.1101/2022.10.10.511571v1">GenSLMs</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/2410.06209">LeanAgent</a></span></p>
+        </li>
+
+        <li id="topic-trust">
+          <p class="theme-head"><span class="theme-label">Trustworthy &amp; Robust ML.</span> <span class="theme-q">How do models behave under worst-case inputs, and what else does trust require?</span></p>
+          <p class="tags-line"><span class="tags">Physical-world attacks · Certified robustness · IP &amp; privacy</span></p>
+          <p class="theme-desc">Our roots are in adversarial machine learning, where our work showed that attacks are practical in the physical world, including against autonomous driving, and built defenses from diffusion-based purification to certified robustness.</p>
+          <ul class="subqs">
+            <li>
+              <p class="subq">Do adversarial attacks work in the physical world?</p>
+              <p class="subq-papers"><span class="paper"><a class="pn" href="https://arxiv.org/abs/1707.08945">RP2</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/1907.05418">Adv-LiDAR</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/2106.09249">MSF-ADV</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/1810.05206">MeshAdv</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/2209.08744">AdvDO</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/pdf/2208.00094.pdf">RobustTraj</a></span></p>
+            </li>
+            <li>
+              <p class="subq">What do adversarial examples look like beyond pixel noise?</p>
+              <p class="subq-papers"><span class="paper"><a class="pn" href="https://arxiv.org/abs/1801.02610">AdvGAN</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/1801.02612">stAdv</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/1906.07927">SemanticAdv</a></span> <span class="paper"><a class="pn" href="pdf/ECCV_CR_1682.pdf">Spatial Consistency</a></span> <span class="paper"><a class="pn" href="pdf/aamas_2022.pdf">Deep RL Attacks</a></span> <span class="paper"><a class="pn" href="https://www.usenix.org/conference/usenixsecurity23/presentation/yu-zhiyuan-smack">SMACK</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/2309.07398">Diffusion Attack</a></span></p>
+            </li>
+            <li>
+              <p class="subq">Can we make models robust, empirically and provably?</p>
+              <p class="subq-papers"><span class="paper"><a class="pn" href="https://arxiv.org/abs/2205.07460">DiffPure</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/2003.08938">SA-MDP</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/1906.06316">CROWN-IBP</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/2204.12451">FAN</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/2110.13771">AugMax</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/2211.00322">DensePure</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/1708.08327">Conserved Features</a></span> <span class="paper"><a class="pn" href="https://openaccess.thecvf.com/content_ICCV_2019/papers/Xiao_AdvIT_Adversarial_Frames_Identifier_Based_on_Temporal_Consistency_in_Videos_ICCV_2019_paper.pdf">AdvIT</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/2308.14333">DiffSmooth</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/2303.01507">AudioPure</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/pdf/2407.00623.pdf">Consistency Purification</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/2506.06027">SSNI</a></span> <span class="paper"><a class="pn" href="https://proceedings.mlr.press/v202/sun23m.html">3D Purification</a></span> <span class="paper"><a class="pn" href="https://proceedings.neurips.cc/paper/2021/file/82cadb0649a3af4968404c9f6031b233-Paper.pdf">3D Self-Supervision</a></span> <span class="paper"><a class="pn" href="https://openaccess.thecvf.com/content/ICCV2021/papers/Sun_Can_Shape_Structure_Features_Improve_Model_Robustness_Under_Diverse_Adversarial_ICCV_2021_paper.pdf">Shape Robustness</a></span></p>
+            </li>
+            <li>
+              <p class="subq">How do we protect model IP and data privacy, and catch hallucinations?</p>
+              <p class="subq-papers"><span class="paper"><a class="pn" href="https://arxiv.org/pdf/2409.17504.pdf">HaloScope</a></span> <span class="paper"><a class="pn" href="https://aclanthology.org/2024.naacl-long.180.pdf">LLM Fingerprinting</a></span> <span class="paper"><a class="pn" href="https://openreview.net/forum?id=KRMSH1GxUK">LLM Watermark</a></span> <span class="paper"><a class="pn" href="https://proceedings.mlr.press/v202/yu23g.html">CodeIPPrompt</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/2602.05252">Copyright Detective</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/1812.10193">Private Data Publishing</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/2207.12263">SecretGen</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/1805.09898">Co-Membership Attack</a></span> <span class="paper"><a class="pn" href="https://arxiv.org/abs/2306.15742">DP Video</a></span> <span class="paper"><a class="pn" href="pdf/TDSC.pdf">RF Privacy</a></span> <span class="paper"><a class="pn" href="pdf/sec18-final415.pdf">Exploit Discovery</a></span></p>
+            </li>
+          </ul>
+        </li>
+
+      </ul>
+    </section>
+
+    <!-- News -->
+    <section id="news">
+      <h2><span class="emoji">📰</span> News</h2>
+      <ul class="plain">
+        <li><span class="date">[Oct 2026]</span> Four papers accepted to NeurIPS 2026 on agent security and safety: <a href="https://arxiv.org/abs/2606.22673">Agent MechSuits</a> (safety steering for multi-turn CLI agents), <a href="https://arxiv.org/abs/2605.17329">LPG</a> (latent policy guardrails), <a href="https://arxiv.org/abs/2606.04027">MaskForge</a> (jailbreaking diffusion LLMs), and <a href="https://arxiv.org/abs/2605.21606">position-weighted self-distillation</a> for reasoning. Congratulations to all authors!</li>
+        <li><span class="date">[Oct 2026]</span> More 2026 papers on LLM and agent security: <a href="https://arxiv.org/abs/2602.00154">ReasoningBomb</a> (CCS 2026), <a href="https://arxiv.org/abs/2510.06607">Your Harness is Not Secure</a> (EMNLP 2026), <a href="https://arxiv.org/abs/2505.18672">Concept Concentration</a> (ICML 2026), and four papers at ICLR 2026, including <a href="https://arxiv.org/abs/2507.11500">ARMOR</a> and <a href="https://openreview.net/forum?id=LfdFnakqGJ">A2ASecBench</a>.</li>
+        <li><span class="date">[Mar 2026]</span> Serving as Senior Area Chair for ACL, EMNLP, and NeurIPS.</li>
+        <li><span class="date">[Jan 2025]</span> We have 9 papers at ICLR and 3 papers at ACL on model safety and security. Congratulations to all authors!</li>
+        <li><span class="date">[Dec 2024]</span> We received the Fall Research Competition Award at UW–Madison. Thank you UW–Madison and OVCR.</li>
+        <li><span class="date">[Nov 2024]</span> Our group recently received funding and donations. Thank you Amazon and Apple!</li>
+        <li><span class="date">[Nov 2024]</span> Our lab will have a winter break this December. Lab members will enjoy some well-deserved vacation time with their families and loved ones.</li>
+        <li><span class="date">[Sep 2024]</span> Four papers at the NeurIPS regular track.</li>
+        <li><span class="date">[Sep 2024]</span> Our study on <a href="https://arxiv.org/abs/2402.01920">safety of RLHF alignment</a> is accepted to S&amp;P (Oakland) 2025.</li>
+        <li><span class="date">[Jul 2024]</span> Our <a href="https://eddyluo1232.github.io/JailBreakV28K/">multimodal jailbreak benchmark</a> is accepted to COLM. It is from the interns in my group.</li>
+        <li><span class="date">[Jul 2024]</span> 4/4 papers accepted to ECCV on trustworthy VLMs and driving. Two of them are from interns in my group.</li>
+        <li><span class="date">[Jun 2024]</span> Senior Area Chair for the NeurIPS Datasets &amp; Benchmarks track, and AC for the NeurIPS regular track.</li>
+        <li><span class="date">[May 2024]</span> Our jailbreak paper is accepted to USENIX Security. Congratulations, Zhiyuan!</li>
+        <li><span class="date">[Mar 2024]</span> Five papers at NAACL on LLM security (4 main, 1 Findings): two on backdoor attacks, one on backdoor defense, one on jailbreak attacks, and one on model fingerprinting.</li>
+        <li><span class="date">[Mar 2024]</span> PreDa for personalized federated learning is accepted at CVPR 2024.</li>
+        <li><span class="date">[Jan 2024]</span> Three papers at ICLR and two papers at TMLR.</li>
+        <li><span class="date">[Oct 2023]</span> Our paper MoleculeSTM is accepted to <em>Nature Machine Intelligence</em>. MoleculeSTM aligns natural language and molecule representations in the same space.</li>
+      </ul>
+
+      <details class="more">
+        <summary>Older news</summary>
+        <ul class="plain">
+          <li><span class="date">[Oct 2023]</span> Three papers at EMNLP and one at NeurIPS. Our NeurIPS paper studies a new threat to instruction tuning of LLMs by injecting ads — the first work to view LLMs as generative models and attack their generative property.</li>
+          <li><span class="date">[Oct 2023]</span> Our tutorial on Security and Privacy in the Era of Large Language Models is accepted to NAACL.</li>
+          <li><span class="date">[May 2023]</span> One paper at ACL. Congratulations to Zhuofeng and Jiazhao! We propose an attention-based method to defend against NLP backdoor attacks.</li>
+          <li><span class="date">[Apr 2023]</span> Two papers at ICML. Congratulations to Jiachen and Zhiyuan! We propose the first benchmark for code copyright of code generation models.</li>
+          <li><span class="date">[Feb 2023]</span> Two papers at CVPR. Congratulations to Yiming and Xiaogeng (an intern from my group at ASU).</li>
+          <li><span class="date">[Feb 2023]</span> I will give a tutorial at CVPR 2023 on trustworthiness in the era of foundation models.</li>
+          <li><span class="date">[Jan 2023]</span> <a href="impact.pdf">Impact Award from Argonne National Laboratory.</a></li>
+          <li><span class="date">[Jan 2023]</span> One paper accepted to USENIX Security 2023.</li>
+          <li><span class="date">[Jan 2023]</span> Three papers accepted to ICLR 2023. <a href="https://arxiv.org/abs/2211.00322">[a]</a> explains why and how diffusion models improve adversarial robustness, and designs DensePure for state-of-the-art certified robustness. <a href="https://arxiv.org/pdf/2208.11126.pdf">[b]</a> is our first attempt at a retrieval-based framework for AI drug discovery.</li>
+          <li><span class="date">[Dec 2022]</span> Our team won the ACM Gordon Bell Special Prize for COVID-19 Research.</li>
+          <li><span class="date">[Sep 2022]</span> One paper accepted to USENIX Security 2023, and two papers accepted to NeurIPS 2022.</li>
+          <li><span class="date">[Sep 2022]</span> <a href="https://arxiv.org/pdf/2208.00094.pdf">RobustTraj</a> is accepted to CoRL as an oral presentation. We train trajectory prediction models that are robust to adversarial attacks.</li>
+          <li><span class="date">[Aug 2022]</span> Talk at the virtual seminar series on <a href="https://vsehwag.github.io/SPML_seminar/">Challenges and Opportunities for Security &amp; Privacy in Machine Learning</a>.</li>
+          <li><span class="date">[Jul 2022]</span> Our survey on the challenges and opportunities of machine learning security is accepted to ACM Computing Surveys.</li>
+          <li><span class="date">[Jul 2022]</span> Two papers accepted to ECCV 2022.</li>
+          <li><span class="date">[May 2022]</span> Two papers accepted to ICML 2022.</li>
+          <li><span class="date">[Mar 2022]</span> Talks at the AAAI 2022 Workshop on Practical Deep Learning in the Wild and the AAAI 2022 Workshop on Adversarial Machine Learning and Beyond.</li>
+          <li><span class="date">[Feb 2022]</span> One paper accepted to ICLR.</li>
+        </ul>
+      </details>
+    </section>
+
+    <!-- Talks -->
+    <section id="talks">
+      <h2><span class="emoji">🎤</span> Recent Talks</h2>
+      <ul class="plain">
+        <li>Discussion lead, How to Secure AI Agents · Alignment Workshop @ San Diego (NeurIPS) <span class="date">· 2025-12</span></li>
+        <li>Invited Talk · <a href="https://cvpr25-advml.github.io/">5th Workshop on Adversarial Machine Learning on Computer Vision: Foundation Models + X</a> @ CVPR <span class="date">· 2025-06</span></li>
+        <li>Invited Talk · <a href="https://sites.google.com/ucsd.edu/sagai25-ieee-sp/">Secure Generative AI Agents Workshop</a> @ IEEE S&amp;P <span class="date">· 2025-05</span></li>
+        <li>Invited Talk · International Symposium on Trustworthy Foundation Models <span class="date">· 2025-04</span></li>
+        <li>Invited Talk · SFU @ NeurIPS <span class="date">· 2024-12</span></li>
+        <li>Invited Talk · LLM and Agent Safety Competition @ NeurIPS <span class="date">· 2024-12</span></li>
+        <li>Keynote · <a href="https://lamps-ccs.com/">CCS Workshop on Large AI Systems and Models with Privacy and Safety Analysis</a> <span class="date">· 2024-10</span></li>
+        <li>Invited Talk · Trillion Parameter Consortium (TPC), LLM safety and security <span class="date">· 2024-10</span></li>
+        <li>Invited Talk · <a href="https://nyu-larx.github.io/nsf-llm4security/#Agenda">NSF Workshop on Large Language Models for Network Security</a> <span class="date">· 2024-10</span></li>
+      </ul>
+      <details class="more">
+        <summary>Earlier talks</summary>
+        <ul class="plain">
+          <li>Invited Talk · CVPR Workshop of Adversarial Machine Learning on Computer Vision: Robustness of Foundation Models <span class="date">· 2024-06</span></li>
+          <li>Tutorial · NAACL, Combating Security and Privacy Issues in the Era of Large Language Models <span class="date">· 2024-06</span></li>
+          <li>Invited Talk · ICLR Workshop on Secure and Trustworthy Large Language Models <span class="date">· 2024-05</span></li>
+          <li>Invited Talk · NeurIPS TDW Workshop <span class="date">· 2023-12</span></li>
+        </ul>
+      </details>
+    </section>
+
+
+
+    <!-- Publications -->
+    <section id="publications">
+      <h2><span class="emoji">📄</span> Selected Publications <span class="right"><a href="full.html">full list →</a></span></h2>
+      <p class="impact-line"><span class="impact-num" id="cite-total">30,463</span> citations · h-index <span class="impact-num" id="cite-h">69</span> <span class="impact-src">· <a href="https://scholar.google.com/citations?user=Juoqtj8AAAAJ&amp;hl=en">Google Scholar</a>, updated <span id="cite-date">2026-10-09</span></span></p>
+      <p class="note">* equal contribution</p>
+
+      <div class="topic">
+        <p class="topic-title">Model / Agent Safety and Robustness Evaluation (Red-teaming)</p>
+        <ul class="pubs">
+          <li>
+            <div class="pub-title">AutoDAN-Turbo: A Lifelong Agent for Strategy Self-Exploration to Jailbreak LLMs</div>
+            <div class="pub-authors">Xiaogeng Liu*, Peiran Li*, G. Edward Suh, Yevgeniy Vorobeychik, Zhuoqing Mao, Somesh Jha, Patrick McDaniel, Huan Sun, Bo Li, <span class="me">Chaowei Xiao</span></div>
+            <div class="pub-venue"><span class="venue">ICLR 2025</span> <span class="badge award">Spotlight</span> <span class="badge cite">267 citations</span> <a href="https://arxiv.org/abs/2410.05295">[pdf]</a></div>
+          </li>
+          <li>
+            <div class="pub-title">AutoDAN: Generating Stealthy Jailbreak Prompts on Aligned Large Language Models</div>
+            <div class="pub-authors">Xiaogeng Liu, Nan Xu, Muhao Chen, <span class="me">Chaowei Xiao</span></div>
+            <div class="pub-venue"><span class="venue">ICLR 2024</span> <span class="badge cite">1.7k citations</span> <a href="https://arxiv.org/pdf/2310.04451.pdf">[pdf]</a></div>
+          </li>
+          <li>
+            <div class="pub-title">DecodingTrust-Agent Platform (DTap): A Controllable and Interactive Red-Teaming Platform for AI Agents</div>
+            <div class="pub-authors">Zhaorun Chen, Xun Liu, Haibo Tong, Chengquan Guo, Yuzhou Nie, Jiawei Zhang, Mintong Kang, Chejian Xu, Qichang Liu, Xiaogeng Liu, Tianneng Shi, <span class="me">Chaowei Xiao</span>, Sanmi Koyejo, Percy Liang, Wenbo Guo, Dawn Song, Bo Li</div>
+            <div class="pub-venue"><span class="venue">arXiv</span> <a href="https://arxiv.org/abs/2605.04808">[pdf]</a></div>
+          </li>
+          <li>
+            <div class="pub-title">A New Era in LLM Security: Exploring Security Concerns in Real-World LLM-based Systems</div>
+            <div class="pub-authors">Fangzhou Wu, Ning Zhang, Somesh Jha, Patrick McDaniel, <span class="me">Chaowei Xiao</span></div>
+            <div class="pub-venue"><span class="venue">arXiv</span> <span class="badge cite">147 citations</span> <a href="https://arxiv.org/abs/2402.18649">[pdf]</a></div>
+          </li>
+          <li data-gs="don t listen to me understanding and exploring jailbreak prompts">
+            <div class="pub-title">Do Not Listen To Me: Understanding and Exploring Jailbreak Prompts of Large Language Models</div>
+            <div class="pub-authors">Zhiyuan Yu, Xiaogeng Liu, Shuning Liang, Zach Cameron, <span class="me">Chaowei Xiao</span>, Ning Zhang</div>
+            <div class="pub-venue"><span class="venue">USENIX Security 2024</span> <span class="badge award">Distinguished Paper Award</span> <span class="badge cite">256 citations</span> <a href="https://www.usenix.org/system/files/sec24fall-prepub-1500-yu-zhiyuan.pdf">[pdf]</a></div>
+          </li>
+        </ul>
       </div>
-      <!-- /.container -->
-    </footer>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=ErVYLYZ4mvIxvI7ThZdn8MY2RLA5lI-S3KxFHg6T4FY&cl=ffffff&w=a"></script> -->
+      <div class="topic">
+        <p class="topic-title">Safety Alignment / Mitigation</p>
+        <ul class="pubs">
+          <li>
+            <div class="pub-title">Safety Mid-Training: Internalizing LLM Safety as a Foundational Capability</div>
+            <div class="pub-authors">Zhengyue Zhao, Liwei Jiang, Yejin Choi, <span class="me">Chaowei Xiao</span></div>
+            <div class="pub-venue"><span class="venue">Preprint</span></div>
+          </li>
+          <li>
+            <div class="pub-title">ARMOR: Aligning Secure and Safe Large Language Models via Meticulous Reasoning</div>
+            <div class="pub-authors">Zhengyue Zhao, Yingzi Ma, Somesh Jha, Marco Pavone, Patrick McDaniel, <span class="me">Chaowei Xiao</span></div>
+            <div class="pub-venue"><span class="venue">ICLR 2026</span> <a href="https://openreview.net/pdf?id=Wx5xG7FPXK">[pdf]</a></div>
+          </li>
+          <li data-gs="mitigating fine tuning based jailbreak attack with backdoor enhanced safety alignment">
+            <div class="pub-title">Mitigating Fine-tuning Jailbreak Attack with Backdoor Enhanced Alignment</div>
+            <div class="pub-authors">Jiongxiao Wang, Jiazhao Li, Yiquan Li, Xiangyu Qi, Muhao Chen, Junjie Hu, Yixuan Li, Bo Li, <span class="me">Chaowei Xiao</span></div>
+            <div class="pub-venue"><span class="venue">NeurIPS 2024</span> <span class="badge cite">77 citations</span> <a href="https://arxiv.org/abs/2402.14968">[pdf]</a></div>
+          </li>
+        </ul>
+      </div>
 
-  </body>
+      <div class="topic">
+        <p class="topic-title">Agent Security via System-level Solutions</p>
+        <ul class="pubs">
+          <li>
+            <div class="pub-title">DRIFT: Dynamic Rule-Based Defense with Injection Isolation for Securing LLM Agents</div>
+            <div class="pub-authors">Hao Li, Xiaogeng Liu, Hung-Chun Chiu, Dianqi Li, Ning Zhang, <span class="me">Chaowei Xiao</span></div>
+            <div class="pub-venue"><span class="venue">NeurIPS 2025</span> <span class="badge cite">72 citations</span> <a href="https://arxiv.org/abs/2506.12104">[pdf]</a></div>
+          </li>
+          <li>
+            <div class="pub-title">AGrail: A Lifelong Agent Guardrail with Effective and Adaptive Safety Detection</div>
+            <div class="pub-authors">Weidi Luo, Shenghong Dai, Xiaogeng Liu, Suman Banerjee, Huan Sun, Muhao Chen, <span class="me">Chaowei Xiao</span></div>
+            <div class="pub-venue"><span class="venue">ACL 2025</span> <span class="badge cite">111 citations</span> <a href="https://arxiv.org/abs/2502.11448">[pdf]</a></div>
+          </li>
+          <li>
+            <div class="pub-title">PIGuard: Prompt Injection Guardrail via Mitigating Overdefense for Free</div>
+            <div class="pub-authors">Hao Li, Xiaogeng Liu, Ning Zhang, <span class="me">Chaowei Xiao</span></div>
+            <div class="pub-venue"><span class="venue">ACL 2025</span> <span class="badge cite">91 citations</span> <a href="https://aclanthology.org/2025.acl-long.1468/">[pdf]</a></div>
+          </li>
+          <li>
+            <div class="pub-title">System-Level Defense against Indirect Prompt Injection Attacks: An Information Flow Control Perspective</div>
+            <div class="pub-authors">Fangzhou Wu, Ethan Cecchetti, <span class="me">Chaowei Xiao</span></div>
+            <div class="pub-venue"><span class="venue">arXiv</span> <span class="badge cite">102 citations</span> <a href="https://arxiv.org/abs/2409.19091">[pdf]</a></div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="topic">
+        <p class="topic-title">AI4Science (Bio and Math)</p>
+        <ul class="pubs">
+          <li data-gs="a text guided protein design framework">
+            <div class="pub-title">ProteinDT: A Text-guided Protein Design Framework</div>
+            <div class="pub-authors">Shengchao Liu, Yanjing Li, Zhuoxinran Li, Anthony Gitter, Yutao Zhu, Jiarui Lu, Zhao Xu, Weili Nie, Arvind Ramanathan, <span class="me">Chaowei Xiao</span>*, Jian Tang*, Hongyu Guo*, Anima Anandkumar*</div>
+            <div class="pub-venue"><span class="venue">Nature Machine Intelligence 2025</span> <span class="badge cite">142 citations</span> <a href="https://arxiv.org/abs/2302.04611">[pdf]</a></div>
+          </li>
+          <li>
+            <div class="pub-title">Multi-modal Molecule Structure–Text Model for Text-based Retrieval and Editing</div>
+            <div class="pub-authors">Shengchao Liu, Weili Nie, Chengpeng Wang, Jiarui Lu, Zhuoran Qiao, Ling Liu, Jian Tang*, <span class="me">Chaowei Xiao</span>*, Animashree Anandkumar*</div>
+            <div class="pub-venue"><span class="venue">Nature Machine Intelligence</span> <span class="badge cite">407 citations</span> <a href="https://arxiv.org/pdf/2212.10789.pdf">[pdf]</a></div>
+          </li>
+          <li data-gs="conversational drug editing using retrieval and domain feedback">
+            <div class="pub-title">ChatDrug: ChatGPT-powered Conversational Drug Editing Using Retrieval and Domain Feedback</div>
+            <div class="pub-authors">Shengchao Liu, Jiongxiao Wang, Yijin Yang, Chengpeng Wang, Ling Liu, Hongyu Guo, <span class="me">Chaowei Xiao</span></div>
+            <div class="pub-venue"><span class="venue">ICLR 2024</span> <span class="badge cite">72 citations</span> <a href="https://openreview.net/pdf?id=HhqJtragcp">[pdf]</a></div>
+          </li>
+          <li>
+            <div class="pub-title">LeanAgent: Lifelong Learning for Formal Theorem Proving</div>
+            <div class="pub-authors">Adarsh Kumarappan, Mo Tiwari, Peiyang Song, Robert Joseph George, <span class="me">Chaowei Xiao</span>, Anima Anandkumar</div>
+            <div class="pub-venue"><span class="venue">ICLR 2025</span> <span class="badge cite">46 citations</span> <a href="https://arxiv.org/abs/2410.06209">[pdf]</a></div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="topic">
+        <p class="topic-title">Foundation Models, Agents, Test-time Training</p>
+        <ul class="pubs">
+          <li>
+            <div class="pub-title">Test-Time Prompt Tuning for Zero-Shot Generalization in Vision-Language Models</div>
+            <div class="pub-authors">Manli Shu, Weili Nie, De-An Huang, Zhiding Yu, Tom Goldstein, Anima Anandkumar, <span class="me">Chaowei Xiao</span></div>
+            <div class="pub-venue"><span class="venue">NeurIPS 2022</span> <span class="badge cite">837 citations</span> <a href="https://arxiv.org/abs/2209.07511">[pdf]</a></div>
+          </li>
+          <li>
+            <div class="pub-title">Dolphins: Multimodal Language Model for Driving</div>
+            <div class="pub-authors">Yingzi Ma, Yulong Cao, Jiachen Sun, Marco Pavone, <span class="me">Chaowei Xiao</span></div>
+            <div class="pub-venue"><span class="venue">ECCV 2024</span> <span class="badge cite">232 citations</span> <a href="https://arxiv.org/abs/2312.00438">[pdf]</a></div>
+          </li>
+          <li>
+            <div class="pub-title">Voyager: An Open-Ended Embodied Agent with Large Language Models</div>
+            <div class="pub-authors">Guanzhi Wang, Yuqi Xie, Yunfan Jiang, Ajay Mandlekar, <span class="me">Chaowei Xiao</span>, Yuke Zhu, Linxi Fan, Anima Anandkumar</div>
+            <div class="pub-venue"><span class="venue">TMLR 2024</span> <span class="badge cite">3.7k citations</span> <a href="https://openreview.net/pdf?id=ehfRiF0R3a">[pdf]</a></div>
+          </li>
+          <li>
+            <div class="pub-title">Prismer: A Vision-Language Model with Multi-Task Experts</div>
+            <div class="pub-authors">Shikun Liu, Linxi Fan, Edward Johns, Zhiding Yu, <span class="me">Chaowei Xiao</span>, Anima Anandkumar</div>
+            <div class="pub-venue"><span class="venue">TMLR 2024</span> <span class="badge cite">23 citations</span> <a href="https://openreview.net/pdf?id=R7H43YD6Lo">[pdf]</a></div>
+          </li>
+          <li>
+            <div class="pub-title">Shall We Pretrain Autoregressive Language Models with Retrieval? A Comprehensive Study</div>
+            <div class="pub-authors">Boxin Wang, Wei Ping, Peng Xu, Lawrence McAfee, Zihan Liu, Mohammad Shoeybi, Yi Dong, Oleksii Kuchaiev, Bo Li, <span class="me">Chaowei Xiao</span>, Anima Anandkumar, Bryan Catanzaro</div>
+            <div class="pub-venue"><span class="venue">EMNLP 2023</span> <span class="badge cite">98 citations</span> <a href="https://arxiv.org/abs/2304.06762">[pdf]</a></div>
+          </li>
+          <li>
+            <div class="pub-title">Re-ViLM: Retrieval-Augmented Visual Language Model for Zero and Few-Shot Image Captioning</div>
+            <div class="pub-authors">Zhuolin Yang, Wei Ping, Zihan Liu, Vijay Anand Korthikanti, Weili Nie, De-An Huang, Linxi Fan, Zhiding Yu, Shiyi Lan, Bo Li, Mohammad Shoeybi, Ming-Yu Liu, Yuke Zhu, Bryan Catanzaro, <span class="me">Chaowei Xiao</span>*, Anima Anandkumar*</div>
+            <div class="pub-venue"><span class="venue">EMNLP 2023</span> <span class="badge cite">83 citations</span> <a href="https://arxiv.org/abs/2302.04858">[pdf]</a></div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="topic">
+        <p class="topic-title">Trustworthy LLMs</p>
+        <ul class="pubs">
+          <li>
+            <div class="pub-title">Can Watermarks be Used to Detect LLM IP Infringement For Free? <span class="tag">Watermark</span></div>
+            <div class="pub-authors">Zhengyue Zhao, Xiaogeng Liu, Somesh Jha, Patrick McDaniel, Bo Li, <span class="me">Chaowei Xiao</span></div>
+            <div class="pub-venue"><span class="venue">ICLR 2025</span> <a href="https://openreview.net/forum?id=KRMSH1GxUK">[pdf]</a></div>
+          </li>
+          <li>
+            <div class="pub-title">HaloScope: Harnessing Unlabeled LLM Generations for Hallucination Detection <span class="tag">Hallucination</span></div>
+            <div class="pub-authors">Xuefeng Du, <span class="me">Chaowei Xiao</span>, Yixuan Li</div>
+            <div class="pub-venue"><span class="venue">NeurIPS 2024</span> <span class="badge award">Spotlight</span> <span class="badge cite">174 citations</span> <a href="https://arxiv.org/abs/2409.17504">[pdf]</a></div>
+          </li>
+          <li>
+            <div class="pub-title">Instructional Fingerprinting of Large Language Models <span class="tag">Fingerprinting</span></div>
+            <div class="pub-authors">Jiashu Xu, Fei Wang, Mingyu Derek Ma, Pang Wei Koh, <span class="me">Chaowei Xiao</span>, Muhao Chen</div>
+            <div class="pub-venue"><span class="venue">NAACL 2024</span> <span class="badge cite">168 citations</span> <a href="https://aclanthology.org/2024.naacl-long.180.pdf">[pdf]</a></div>
+          </li>
+          <li data-gs="agentpoison red teaming llm agents via poisoning memory">
+            <div class="pub-title">AgentPoison: Red-teaming LLM Agents via Memory or Knowledge Base Backdoor Poisoning <span class="tag">Memory Poisoning</span></div>
+            <div class="pub-authors">Zhaorun Chen, Zhen Xiang, <span class="me">Chaowei Xiao</span>, Dawn Song, Bo Li</div>
+            <div class="pub-venue"><span class="venue">NeurIPS 2024</span> <span class="badge cite">597 citations</span> <a href="https://arxiv.org/pdf/2407.12784.pdf">[pdf]</a></div>
+          </li>
+          <li>
+            <div class="pub-title">On the Exploitability of Instruction Tuning <span class="tag">Training-time threats</span></div>
+            <div class="pub-authors">Manli Shu, Jiongxiao Wang, Chen Zhu, Jonas Geiping, <span class="me">Chaowei Xiao</span>*, Tom Goldstein*</div>
+            <div class="pub-venue"><span class="venue">NeurIPS 2023</span> <span class="badge cite">200 citations</span> <a href="https://arxiv.org/abs/2306.17194">[pdf]</a></div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="topic">
+        <p class="topic-title">Adversarial Machine Learning</p>
+        <ul class="pubs">
+          <li>
+            <div class="pub-title">Diffusion Models for Adversarial Purification <span class="tag">Defense</span></div>
+            <div class="pub-authors">Weili Nie, Brandon Guo, Yujia Huang, <span class="me">Chaowei Xiao</span>, Arash Vahdat, Anima Anandkumar</div>
+            <div class="pub-venue"><span class="venue">ICML 2022</span> <span class="badge cite">1.2k citations</span> <a href="https://arxiv.org/abs/2205.07460">[pdf]</a> <a href="https://github.com/NVlabs/DiffPure">[code]</a></div>
+          </li>
+          <li data-gs="densepure understanding diffusion models for adversarial robustness">
+            <div class="pub-title">DensePure: Understanding Diffusion Models towards Adversarial Robustness <span class="tag">Certification</span></div>
+            <div class="pub-authors"><span class="me">Chaowei Xiao</span>*, Zhongzhu Chen*, Kun Jin*, Jiongxiao Wang*, Weili Nie, Mingyan Liu, Anima Anandkumar, Bo Li, Dawn Song</div>
+            <div class="pub-venue"><span class="venue">ICLR 2023</span> <span class="badge cite">137 citations</span> <a href="https://arxiv.org/abs/2211.00322">[pdf]</a></div>
+          </li>
+          <li>
+            <div class="pub-title">Invisible for both Camera and LiDAR: Security of Multi-Sensor Fusion based Perception in Autonomous Driving Under Physical-World Attacks <span class="tag">Physical Attacks</span></div>
+            <div class="pub-authors">Yulong Cao*, Ningfei Wang*, <span class="me">Chaowei Xiao</span>*, Dawei Yang*, Jin Fang, Ruigang Yang, Qi Alfred Chen, Mingyan Liu, Bo Li</div>
+            <div class="pub-venue"><span class="venue">IEEE S&amp;P (Oakland) 2021</span> <span class="badge cite">471 citations</span> <a href="https://arxiv.org/abs/2106.09249">[pdf]</a></div>
+          </li>
+          <li>
+            <div class="pub-title">Spatially Transformed Adversarial Examples <span class="tag">Attacks</span></div>
+            <div class="pub-authors"><span class="me">Chaowei Xiao</span>*, Jun-Yan Zhu*, Bo Li, Warren He, Mingyan Liu, Dawn Song</div>
+            <div class="pub-venue"><span class="venue">ICLR 2018</span> <span class="badge cite">760 citations</span> <a href="https://arxiv.org/abs/1801.02612">[pdf]</a></div>
+          </li>
+          <li>
+            <div class="pub-title">Generating Adversarial Examples with Adversarial Networks <span class="tag">Attacks</span></div>
+            <div class="pub-authors"><span class="me">Chaowei Xiao</span>, Bo Li, Jun-Yan Zhu, Warren He, Mingyan Liu, Dawn Song</div>
+            <div class="pub-venue"><span class="venue">IJCAI 2018</span> <span class="badge cite">1.4k citations</span> <a href="https://arxiv.org/abs/1801.02610">[pdf]</a></div>
+          </li>
+          <li data-gs="robust physical world attacks on deep learning visual classification">
+            <div class="pub-title">Robust Physical-World Attacks on Machine Learning Models <span class="tag">Physical Attacks</span></div>
+            <div class="pub-authors">Kevin Eykholt*, Ivan Evtimov*, Earlence Fernandes, Bo Li, Amir Rahmati, <span class="me">Chaowei Xiao</span>, Atul Prakash, Tadayoshi Kohno, Dawn Song</div>
+            <div class="pub-venue"><span class="venue">CVPR 2018</span> <span class="badge cite">4.4k citations</span> <a href="https://arxiv.org/abs/1707.08945">[pdf]</a></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Group -->
+    <section id="group">
+      <h2><span class="emoji">👥</span> Current PhD Students</h2>
+      <ul class="plain">
+        <li><a href="https://sheltonliu-n.github.io/">Xiaogeng Liu</a> · PhD @ JHU <span class="date">(transferred from UW–Madison)</span></li>
+        <li><a href="https://openreview.net/profile?id=~Zhengyue_Zhao1">Zhengyue Zhao</a> · PhD @ JHU <span class="date">(transferred from UW–Madison)</span></li>
+        <li><a href="https://gray311.github.io/">Yingzi Ma</a> · PhD @ UW–Madison</li>
+        <li>Eddy Luo · PhD @ UGA <span class="date">(co-advised with Zhen Xiang)</span></li>
+        <li><a href="https://leolee99.github.io/">Hao Li</a> · PhD @ WashU <span class="date">(co-advised with Ning Zhang)</span></li>
+        <li><a href="https:///">Bowen Sun</a> · PhD @ JHU <span class="date"></span></li>
+
+      </ul>
+
+      
+    </section>
 
 
+    <!-- Contact -->
+    <section id="contact">
+      <h2><span class="emoji">✉️</span> Contact</h2>
+      <p>Email: <span class="chip">chaoweixiao [at] jhu [dot] edu</span></p>
+    </section>
+
+  </main>
+  </div>
+
+  <footer>
+    <span>© Chaowei Xiao</span>
+    <a href="https://clustrmaps.com/site/1bjs5" title="Visit tracker"><img src="https://www.clustrmaps.com/map_v2.png?d=ErVYLYZ4mvIxvI7ThZdn8MY2RLA5lI-S3KxFHg6T4FY&amp;cl=ffffff" alt="Visitor map"></a>
+  </footer>
 
 
-  
+</body>
 </html>

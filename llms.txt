@@ -1,0 +1,36 @@
+# Chaowei Xiao
+
+> Chaowei Xiao is an Assistant Professor at Johns Hopkins University and a researcher at NVIDIA Research. Chaowei Xiao works on LLM security, AI agent security, and AI safety, with the goal of building safe AGI.
+
+- Homepage: https://xiaocw11.github.io/
+- Publications: https://xiaocw11.github.io/full.html
+- Google Scholar: https://scholar.google.com/citations?user=Juoqtj8AAAAJ
+- X (Twitter): https://twitter.com/ChaoweiX
+- LinkedIn: https://www.linkedin.com/in/chaowei-xiao-00a73213a
+- Zhihu (知乎): https://www.zhihu.com/people/xiao-chao-wei-56
+- Xiaohongshu (小红书): https://www.rednote.com/user/profile/68da2762000000002101a314
+- Email: chaoweixiao@jhu.edu
+
+## Research areas
+
+- **Red-teaming LLMs and agents**: automated jailbreak attacks (AutoDAN, ICLR 2024; AutoDAN-Turbo, ICLR 2025 Spotlight), agent memory and environment attacks (AgentPoison, NeurIPS 2024; EIA, ICLR 2025), multimodal jailbreak benchmarks (JailbreakV-28K, COLM 2024), and trustworthiness benchmarks (TrustLLM, ICML 2024).
+- **Safety alignment and mitigation**: reasoning-based safety alignment (ARMOR, ICLR 2026), poisoning of instruction tuning and RLHF (On the Exploitability of Instruction Tuning, NeurIPS 2023; RLHFPoison, ACL 2024), and backdoor defenses.
+- **AI agent security via system-level solutions**: prompt-injection defenses and agent guardrails (DRIFT, NeurIPS 2025; AGrail, ACL 2025; PIGuard, ACL 2025) and information-flow control for LLM agents.
+- **Building agents and continual learning**: Voyager (open-ended embodied agent), LeanAgent (lifelong theorem proving, ICLR 2025), test-time prompt tuning (NeurIPS 2022).
+- **AI for science**: MoleculeSTM and ProteinDT (Nature Machine Intelligence), GenSLMs (ACM Gordon Bell Special Prize).
+- **Adversarial machine learning**: physical-world attacks on deep learning (RP2, CVPR 2018), LiDAR attacks on autonomous driving (CCS 2019, IEEE S&P 2021), and diffusion-based adversarial purification (DiffPure, ICML 2022).
+
+## Recognition
+
+- MIT Technology Review Innovators Under 35 (TR35)
+- Schmidt Sciences AI2050 Early Career Fellowship (2024)
+- Impact Award, Argonne National Laboratory (2023)
+- Paper awards: USENIX Security Distinguished Paper Award (2024), EWSN Best Paper Award (2021), MobiCom Best Paper Award (2014)
+- ACM Gordon Bell Special Prize for HPC-Based COVID-19 Research (2023); ACM Gordon Bell Prize Finalist (2024)
+- More than 30,000 citations (Google Scholar)
+- Research featured in Nature, Wired, Fortune, and The New York Times; one research output is on display at the Science Museum in London
+- Senior Area Chair for ACL, EMNLP, and NeurIPS
+
+## Background
+
+Ph.D., University of Michigan, Ann Arbor; B.E., Tsinghua University. Previously an assistant professor at the University of Wisconsin–Madison and Arizona State University.
