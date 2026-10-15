@@ -404,7 +404,6 @@ details.more > ul { margin-top: 8px; }
   margin-left: 2px;
 }
 .badge.award { background: #fdf3d0; color: #7a5a00; border: 1px solid #f1c400; }
-.badge.cite { background: var(--accent-wash); color: var(--heritage); border: 1px solid var(--accent-line); }
 @media (max-width: 720px) {
   .paper { white-space: normal; }
 }
