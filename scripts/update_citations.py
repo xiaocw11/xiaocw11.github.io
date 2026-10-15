@@ -4,7 +4,7 @@
 Run daily by .github/workflows/update-citations.yml. It
   1. writes data/citations.json, and
   2. writes the numbers straight into index.html (total citations, h-index,
-     date, and the per-paper badges in Selected Publications), so they are
+     and date), so they are
      plain HTML that search engines and AI crawlers can read without
      running JavaScript.
 
@@ -31,7 +31,6 @@ OUT = os.path.join(ROOT, "data", "citations.json")
 INDEX = os.path.join(ROOT, "index.html")
 PAGE = "https://scholar.google.com/citations?user={user}&hl=en&cstart={start}&pagesize=100"
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
-MIN_BADGE = 20  # papers with fewer citations get no badge
 
 
 def norm(title):
@@ -118,21 +117,6 @@ def scrape():
     }
 
 
-def fmt(n):
-    return f"{n / 1000:.1f}".rstrip("0").rstrip(".") + "k" if n >= 1000 else str(n)
-
-
-def lookup(papers, key):
-    """Exact title match, else the best prefix match (titles often get shortened)."""
-    if key in papers:
-        return papers[key]
-    best = None
-    for k, n in papers.items():
-        if len(k) >= 25 and len(key) >= 25 and (k.startswith(key) or key.startswith(k)):
-            best = n if best is None else max(best, n)
-    return best
-
-
 def render(data):
     """Write the numbers into index.html as static HTML."""
     with open(INDEX, encoding="utf-8") as f:
@@ -149,35 +133,10 @@ def render(data):
     s = put('data-cite="total"', f'{data["total"]:,}', s)
     s = put('data-cite="hindex"', str(data["hindex"]), s)
 
-    count = 0
-    a = s.find('<section id="publications">')
-    b = s.find("</section>", a)
-    if a >= 0 and b >= 0:
-        papers = data["papers"]
-
-        def badge(m):
-            nonlocal count
-            li = re.sub(r' <span class="badge cite">[^<]*</span>', "", m.group(0))
-            title = re.search(r'<div class="pub-title">(.*?)</div>', li, re.S)
-            venue = re.search(r'<div class="pub-venue">(.*?)</div>', li, re.S)
-            if not title or not venue:
-                return li
-            gs = re.search(r'data-gs="([^"]+)"', li)
-            text = re.sub(r"<[^>]+>", "", re.sub(r'<span class="tag">.*?</span>', "", title.group(1)))
-            n = lookup(papers, norm(gs.group(1) if gs else text))
-            marks = list(re.finditer(r'<span class="(?:venue|badge award)">[^<]*</span>', venue.group(1)))
-            if n is None or n < MIN_BADGE or not marks:
-                return li
-            count += 1
-            pos = venue.start(1) + marks[-1].end()
-            return li[:pos] + f' <span class="badge cite">{fmt(n)} citations</span>' + li[pos:]
-
-        s = s[:a] + re.sub(r"<li\b[^>]*>.*?</li>", badge, s[a:b], flags=re.S) + s[b:]
-
     if s != orig:
         with open(INDEX, "w", encoding="utf-8") as f:
             f.write(s)
-    print(f"index.html: {count} citation badges, total {data['total']:,}, h-index {data['hindex']}")
+    print(f"index.html: total {data['total']:,}, h-index {data['hindex']}")
 
 
 def main():
